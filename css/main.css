@@ -3800,8 +3800,8 @@ fieldset[disabled] a.btn {
 
 .btn-default {
     color: #fff;
-    background-color: #8f2424;
-    border-color: #8f2424
+    background-color: #004798;
+    border-color: #004798
 }
 
 .btn-default:focus,
@@ -3863,12 +3863,12 @@ fieldset[disabled] .btn-default:focus,
 fieldset[disabled] .btn-default.focus,
 fieldset[disabled] .btn-default:active,
 fieldset[disabled] .btn-default.active {
-    background-color: #8f2424;
-    border-color: #8f2424
+    background-color: #004798;
+    border-color: #004798
 }
 
 .btn-default .badge {
-    color: #8f2424;
+    color: #004798;
     background-color: #fff
 }
 
@@ -8237,7 +8237,7 @@ p:last-child {
 }
 
 a {
-    color: #8f2424;
+    color: #004798;
     text-decoration: none
 }
 
@@ -8291,7 +8291,7 @@ strong {
 
 .navbar-default .navbar-nav>li>a:hover {
     color: #fff;
-    background: #972626
+    background: #004798
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -8303,7 +8303,7 @@ strong {
 
 .navbar-default .navbar-toggle {
     border-color: transparent;
-    background: #8f2424
+    background: #004798
 }
 
 .navbar-default .navbar-toggle:hover,
@@ -8317,7 +8317,7 @@ strong {
 
 .main-footer {
     color: #fff;
-    background: #972626;
+    background: #004798;
     text-align: center
 }
 
@@ -8337,7 +8337,7 @@ strong {
 }
 
 .hero {
-    background: #8f2424;
+    background: #004798;
     position: relative;
     margin-top: 70px
 }
@@ -8363,7 +8363,7 @@ strong {
 
 .hero-content {
     padding: 20px 0;
-    background: rgba(143, 36, 36, 0.5);
+    background: rgba(22, 116, 224, 0.5);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -8404,7 +8404,7 @@ strong {
 }
 
 .about-us h3 {
-    color: #8f2424;
+    color: #004798;
     margin-bottom: 20px
 }
 
@@ -8419,7 +8419,7 @@ strong {
 
 .publication .icon {
     font-size: 1.5rem;
-    color: #8f2424
+    color: #004798
 }
 
 .publication .pub-thumbnail {
@@ -8652,7 +8652,7 @@ strong {
     right: 0;
     bottom: 0;
     z-index: 1;
-    background: rgba(143, 36, 36, 0.5)
+    background: rgba(22, 116, 224, 0.5)
 }
 
 .mottos .container-fluid {
@@ -8740,12 +8740,12 @@ strong {
     width: 2.3rem;
     height: 2.3rem;
     padding: 5px 0;
-    border: solid 2px #8f2424;
+    border: solid 2px #004798;
     text-align: center
 }
 
 .boxed-icon .icon {
-    color: #8f2424;
+    color: #004798;
     font-size: 1.5rem
 }
 
