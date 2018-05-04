@@ -5296,10 +5296,11 @@ tbody.collapse.in {
     margin: 12.5px 0
 }
 
+/* navbar margin */
 .navbar-nav>li>a {
     padding-top: 10px;
     padding-bottom: 10px;
-    line-height: 20px
+    line-height: 25px
 }
 
 @media (max-width: 991px) {
@@ -8267,10 +8268,11 @@ strong {
     line-height: 70px
 }
 
+/* img size */
 .navbar-brand>img {
     display: inline-block;
     max-width: 220px;
-    max-height: 50px
+    max-height: 70px;
 }
 
 @media (min-width: 480px) {
