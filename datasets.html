@@ -24,43 +24,10 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/favicon.png">
-
-    <!-- Stylesheet -->
-
-    <!-- <link media="all" href="css/glab.css" type="text/css" rel="StyleSheet"> -->
-    <!-- <style type="text/css" media="all">
-        IMG {
-            PADDING-RIGHT: 0px;
-            PADDING-LEFT: 0px;
-            FLOAT: right;
-            PADDING-BOTTOM: 0px;
-            PADDING-TOP: 0px;
-        }
-
-        #primarycontent {
-            MARGIN-LEFT: auto;
-            WIDTH: expression(document.body.clientWidth > 1000? "1000px": "auto");
-            MARGIN-RIGHT: auto;
-            TEXT-ALIGN: left;
-            max-width: 1000px;
-        }
-
-        h2 {
-            color: #004798;
-        }
-
-        BODY {
-            TEXT-ALIGN: center
-        }
-    </style> -->
 </head>
 
 
 <body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
-    <!--[if lt IE 10]>
-        <p class="oldie">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> to better experience this site.</p>
-    <![endif]-->
-
     <!-- Start Header -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -109,15 +76,7 @@
         <div class="container-fluid">
             <div id="primarycontent">
                 <center>
-                    <h2>Future Frame Prediction for Anomaly Detection - A New Baseline</h2>
-                </center>
-                <center>
-                    <h3>
-                        <a href="http://www.eecs.berkeley.edu/~junyanz/">Wen Liu</a>&nbsp;&nbsp;&nbsp;
-                        <a href="https://taesung.me/">Weixin Luo</a>&nbsp;&nbsp;&nbsp;
-                        <a href="http://web.mit.edu/phillipi/">Dongze Lian</a>&nbsp;&nbsp;&nbsp;
-                        <a href="http://www.eecs.berkeley.edu/~efros/">Shenghua Gao</a>
-                    </h3>
+                    <h2>ShanghaiTech Campus dataset (Anomaly Detection)</h2>
                 </center>
                 <center>
                     <h3>
@@ -125,41 +84,64 @@
                     </h3>
                 </center>
                 <center>
-                    <h3 style="color: #000000">In CVPR 2018</h2>
-                </center>
-                <center>
                     <h3>
-                        <a href="https://arxiv.org/abs/1712.09867" style="color: #990000">[Paper]</a>
-                        <a href="https://github.com/StevenLiuWen/ano_pred_cvpr2018" style="color: #990000">[Code (Tensorflow)]</a>
+                        <a href="https://onedrive.live.com/?authkey=%21AMqh2fTSemfrokE&id=3705E349C336415F%215109&cid=3705E349C336415F " style="color: #990000">[Download (Onedrive)]</a>
                     </h3>
                 </center>
                 <center>
                     <a href="https://junyanz.github.io/CycleGAN/images/teaser_high_res.jpg">
-                        <img src="img/p1.png" width="1000"> </a>
+                        <img src="img/dataset/SHTU_Campus/show.png" width="1000"> </a>
                 </center>
                 <p></p>
 
 
                 <p>
-                    <h2>Abstract</h2>
+                    <h2>Introduction</h2>
 
                     <div style="font-size:14px">
-                        <p>Anomaly detection in videos refers to the identification of events that do not conform to expected
-                            behavior. However, almost all existing methods tackle the problem by minimiz- ing the reconstruction
-                            errors of training data, which can- not guarantee a larger reconstruction error for an abnor-
-                            mal event. In this paper, we propose to tackle the anomaly detection problem within a video prediction
-                            framework. To the best of our knowledge, this is the first work that lever- ages the difference
-                            between a predicted future frame and its ground truth to detect an abnormal event. To predict
-                            a future frame with higher quality for normal events, other than the commonly used appearance
-                            (spatial) constraints on intensity and gradient, we also introduce a motion (tem- poral) constraint
-                            in video prediction by enforcing the opti- cal flow between predicted frames and ground truth
-                            frames to be consistent, and this is the first work that introduces a temporal constraint into
-                            the video prediction task. Such spatial and motion constraints facilitate the future frame prediction
-                            for normal events, and consequently facilitate to identify those abnormal events that do not
-                            conform the expectation. Extensive experiments on both a toy dataset and some publicly available
-                            datasets validate the effec- tiveness of our method in terms of robustness to the un- certainty
-                            in normal events and the sensitivity to abnormal events.</p>
+                        <p>It is desirable that the anomaly detection model trained can be directly applied in multiple scenes
+                            with multiple view angles. However, almost all existing datasets only contain videos captured
+                            with one fixed angle camera, and it lacks diversity of scenes and view angles. To increase scene
+                            diversity, we build a new anomaly detection dataset. Further we introduce the anomalies caused
+                            by sudden motion in this dataset, such as chasing and brawling in our dataset, which are not
+                            included in existing datasets. These characteristics make our dataset more suitable in real scenarios.
+                            To better understand the differences between our dataset and existing anomaly detection datasets,
+                            we briefly summarize all anomaly detection datasets as follows:
+                        </p>
+
+                        <p>
+                            <strong>CUHK Avenue dataset [1]</strong> contains 16 training videos and 21 testing videos with a total
+                            of 47 abnormal events, including throwing objects, loitering and running. The size of people
+                            may change because of the camera position and angle.
+                        </p>
+
+                        <p>
+                            <strong>Pedestrian 1 (Ped1) dataset [2]</strong> includes 34 training videos and 36 testing videos with
+                            40 irregular events. All of these abnormal cases are about vehicles such as bicycles and cars.
+                            Pedestrian 2 (Ped2) [2] dataset contains 16 training videos and 12 testing videos with 12 abnormal
+                            events. The definition of anomaly for Ped2 is the same with Ped1.
+                        </p>
+
+                        <p>
+                            <strong>Subway dataset [3]</strong> are 2 hours long in total. There are two categories, i.e. Entrance
+                            and Exit. Unusual events contain walking in wrong directions and loitering. More importantly,
+                            this dataset is recorded in indoor environment while above ones are recorded in outdoor environment.
+
+                        </p>>
+
+
                     </div>
+
+                    <h2>ShanghaiTech Campus</h2>
+                    <p>
+                        ShanghaiTech Campus dataset has 13 scenes with complex light conditions and camera angles. It contains 130 abnormal events
+                        and over 270, 000 training frames. Moreover, pixel level ground truth of abnormal events is also
+                        annotated in our dataset.
+                    </p>
+
+                    <center>
+                        <img src="img/dataset/SHTU_Campus/table.png">
+                    </center>
 
                     <h2>Citation</h2>
                     If you find this useful, please cite our work as follows:
