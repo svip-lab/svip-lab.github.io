@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+
+    <!-- <meta property="og:image" content="https://junyanz.github.io/CycleGAN/images/teaser_fb.jpg" />
+    <meta property="og:title" content="Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks" /> -->
+
+
+    <title>CVDL@ShanghaiTech</title>
+    <meta name="description" content="">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic' rel='stylesheet' type='text/css'>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <!-- Stylesheet -->
+
+    <!-- <link media="all" href="css/glab.css" type="text/css" rel="StyleSheet"> -->
+    <!-- <style type="text/css" media="all">
+        IMG {
+            PADDING-RIGHT: 0px;
+            PADDING-LEFT: 0px;
+            FLOAT: right;
+            PADDING-BOTTOM: 0px;
+            PADDING-TOP: 0px;
+        }
+
+        #primarycontent {
+            MARGIN-LEFT: auto;
+            WIDTH: expression(document.body.clientWidth > 1000? "1000px": "auto");
+            MARGIN-RIGHT: auto;
+            TEXT-ALIGN: left;
+            max-width: 1000px;
+        }
+
+        h2 {
+            color: #004798;
+        }
+
+        BODY {
+            TEXT-ALIGN: center
+        }
+    </style> -->
+</head>
+
+
+<body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
+    <!--[if lt IE 10]>
+        <p class="oldie">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> to better experience this site.</p>
+    <![endif]-->
+
+    <!-- Start Header -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand scroll" href="../index.html">
+                    <img src="../img/logo.png" alt="ShanghaiTech">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse scrollspy" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="scroll" href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="../news.html">News</a>
+                    </li>
+                    <!-- <li><a class="scroll" href="/events">Event</a></li> -->
+                    <li>
+                        <a class="scroll" href="../team.html">Team</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="../publication.html">Publication</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="../projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="../datasets.html">Datasets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Header -->
+
+
+    <div class="news top-container">
+        <div class="container-fluid">
+            <div id="primarycontent">
+                <center>
+                    <h2>Future Frame Prediction for Anomaly Detection - A New Baseline</h2>
+                </center>
+                <center>
+                    <h3>
+                        <a href="http://www.eecs.berkeley.edu/~junyanz/">Wen Liu</a>&nbsp;&nbsp;&nbsp;
+                        <a href="https://taesung.me/">Weixin Luo</a>&nbsp;&nbsp;&nbsp;
+                        <a href="http://web.mit.edu/phillipi/">Dongze Lian</a>&nbsp;&nbsp;&nbsp;
+                        <a href="http://www.eecs.berkeley.edu/~efros/">Shenghua Gao</a>
+                    </h3>
+                </center>
+                <center>
+                    <h3>
+                        <a href="http://www.shanghaitech.edu.cn" target="_blank">ShanghaiTech University</a>
+                    </h3>
+                </center>
+                <center>
+                    <h3 style="color: #000000">In CVPR 2018</h2>
+                </center>
+                <center>
+                    <h3>
+                        <a href="https://arxiv.org/abs/1712.09867" target="_blank" style="color: #990000">[Paper]</a>
+                        <a href="https://github.com/StevenLiuWen/ano_pred_cvpr2018" target="_blank" style="color: #990000">[Code (Tensorflow)]</a>
+                    </h3>
+                </center>
+                <center>
+                    <a href="https://junyanz.github.io/CycleGAN/images/teaser_high_res.jpg">
+                        <img src="../img/project/p1.png" width="1000"> </a>
+                </center>
+                <p></p>
+
+
+                <p>
+                    <h2>Abstract</h2>
+
+                    <div style="font-size:14px">
+                        <p>Anomaly detection in videos refers to the identification of events that do not conform to expected
+                            behavior. However, almost all existing methods tackle the problem by minimiz- ing the reconstruction
+                            errors of training data, which can- not guarantee a larger reconstruction error for an abnor-
+                            mal event. In this paper, we propose to tackle the anomaly detection problem within a video prediction
+                            framework. To the best of our knowledge, this is the first work that lever- ages the difference
+                            between a predicted future frame and its ground truth to detect an abnormal event. To predict
+                            a future frame with higher quality for normal events, other than the commonly used appearance
+                            (spatial) constraints on intensity and gradient, we also introduce a motion (tem- poral) constraint
+                            in video prediction by enforcing the opti- cal flow between predicted frames and ground truth
+                            frames to be consistent, and this is the first work that introduces a temporal constraint into
+                            the video prediction task. Such spatial and motion constraints facilitate the future frame prediction
+                            for normal events, and consequently facilitate to identify those abnormal events that do not
+                            conform the expectation. Extensive experiments on both a toy dataset and some publicly available
+                            datasets validate the effec- tiveness of our method in terms of robustness to the un- certainty
+                            in normal events and the sensitivity to abnormal events.</p>
+                    </div>
+
+                    <h2>Citation</h2>
+                    If you find this useful, please cite our work as follows:
+
+                    <pre>
+@INPROCEEDINGS{liu2018ano_pred, 
+        author={W. Liu and W. Luo, D. Lian and S. Gao}, 
+        booktitle={2018 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+        title={Future Frame Prediction for Anomaly Detection -- A New Baseline}, 
+        year={2018} 
+}</pre>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Start Footer -->
+    <footer class="main-footer">
+        <div class="container-fluid">
+
+            <ul class="social">
+                <li>
+                    <a href="/feed.xml">
+                        <svg class="icon icon-feed">
+                            <use xlink:href="#icon-feed"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <small>
+                Powered by
+                <a href="http://jekyllrb.com/">Jekyll</a>. Template by
+                <a href="https://github.com/obaez/dentistsmile">obaez</a> by
+                <a href="https://raw.githubusercontent.com/obaez/dentistsmile/master/LICENSE.md">MIT License</a>. Image credit by Johns Hopkins University unless stated otherwise.
+            </small>
+
+            <small> © 2018 CCVL @ JHU - All rights reserved </small>
+
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>

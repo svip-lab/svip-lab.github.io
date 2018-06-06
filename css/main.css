@@ -8746,6 +8746,14 @@ strong {
     text-align: center
 }
 
+.boxed-big-icon {
+    width: 23rem;
+    height: 23rem;
+    padding: 5px 0;
+    border: solid 2px #004798;
+    text-align: center
+}
+
 .boxed-icon .icon {
     color: #004798;
     font-size: 1.5rem

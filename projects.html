@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
 
-    <!-- <meta property="og:image" content="https://junyanz.github.io/CycleGAN/images/teaser_fb.jpg" />
-    <meta property="og:title" content="Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks" /> -->
-
 
     <title>CVDL@ShanghaiTech</title>
     <meta name="description" content="">
@@ -24,42 +21,9 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/favicon.png">
-
-    <!-- Stylesheet -->
-
-    <!-- <link media="all" href="css/glab.css" type="text/css" rel="StyleSheet"> -->
-    <!-- <style type="text/css" media="all">
-        IMG {
-            PADDING-RIGHT: 0px;
-            PADDING-LEFT: 0px;
-            FLOAT: right;
-            PADDING-BOTTOM: 0px;
-            PADDING-TOP: 0px;
-        }
-
-        #primarycontent {
-            MARGIN-LEFT: auto;
-            WIDTH: expression(document.body.clientWidth > 1000? "1000px": "auto");
-            MARGIN-RIGHT: auto;
-            TEXT-ALIGN: left;
-            max-width: 1000px;
-        }
-
-        h2 {
-            color: #004798;
-        }
-
-        BODY {
-            TEXT-ALIGN: center
-        }
-    </style> -->
 </head>
 
-
 <body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
-    <!--[if lt IE 10]>
-        <p class="oldie">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> to better experience this site.</p>
-    <![endif]-->
 
     <!-- Start Header -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -77,6 +41,8 @@
                     <img src="img/logo.png" alt="ShanghaiTech">
                 </a>
             </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse scrollspy" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
@@ -104,74 +70,262 @@
     </nav>
     <!-- End Header -->
 
-
     <div class="news top-container">
         <div class="container-fluid">
-            <div id="primarycontent">
-                <center>
-                    <h2>Future Frame Prediction for Anomaly Detection - A New Baseline</h2>
-                </center>
-                <center>
-                    <h3>
-                        <a href="http://www.eecs.berkeley.edu/~junyanz/">Wen Liu</a>&nbsp;&nbsp;&nbsp;
-                        <a href="https://taesung.me/">Weixin Luo</a>&nbsp;&nbsp;&nbsp;
-                        <a href="http://web.mit.edu/phillipi/">Dongze Lian</a>&nbsp;&nbsp;&nbsp;
-                        <a href="http://www.eecs.berkeley.edu/~efros/">Shenghua Gao</a>
-                    </h3>
-                </center>
-                <center>
-                    <h3>
-                        <a href="http://www.shanghaitech.edu.cn" target="_blank">ShenghaiTech University</a>
-                    </h3>
-                </center>
-                <center>
-                    <h3 style="color: #000000">In CVPR 2018</h2>
-                </center>
-                <center>
-                    <h3>
-                        <a href="https://arxiv.org/abs/1712.09867" target="_blank" style="color: #990000">[Paper]</a>
-                        <a href="https://github.com/StevenLiuWen/ano_pred_cvpr2018" target="_blank" style="color: #990000">[Code (Tensorflow)]</a>
-                    </h3>
-                </center>
-                <center>
-                    <a href="https://junyanz.github.io/CycleGAN/images/teaser_high_res.jpg">
-                        <img src="img/p1.png" width="1000"> </a>
-                </center>
-                <p></p>
+            <div class="post">
+                <header>
+                    <h1>Project</h1>
+                    <hr/>
+                </header>
+
+                <!-- eccv2018_zhangzh1 -->
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="project/eccv2018_zhangzh1.html">Saliency Detection in 360 Videos</a>
+                            <br>
+                            <small>Ziheng Zhang
+                                <sup>*</sup>, Yanyu Xu
+                                <sup>*</sup>, Shenghua Gao, and Jingyi Yu</small>
+                        </h4>
 
 
-                <p>
-                    <h2>Abstract</h2>
+                        <small>Submitted to
+                            <strong>
+                                <font color="red">ECCV 2018</font>
+                            </strong>
+                            <!-- <a href="https://arxiv.org/abs/1712.09867" target="_blank" style="color: #990000">[Paper]</a>
+                            <a href="https://github.com/StevenLiuWen/ano_pred_cvpr2018" target="_blank" style="color: #990000">[Code (Tensorflow)]</a> -->
+                        </small>
 
-                    <div style="font-size:14px">
-                        <p>Anomaly detection in videos refers to the identification of events that do not conform to expected
-                            behavior. However, almost all existing methods tackle the problem by minimiz- ing the reconstruction
-                            errors of training data, which can- not guarantee a larger reconstruction error for an abnor-
-                            mal event. In this paper, we propose to tackle the anomaly detection problem within a video prediction
-                            framework. To the best of our knowledge, this is the first work that lever- ages the difference
-                            between a predicted future frame and its ground truth to detect an abnormal event. To predict
-                            a future frame with higher quality for normal events, other than the commonly used appearance
-                            (spatial) constraints on intensity and gradient, we also introduce a motion (tem- poral) constraint
-                            in video prediction by enforcing the opti- cal flow between predicted frames and ground truth
-                            frames to be consistent, and this is the first work that introduces a temporal constraint into
-                            the video prediction task. Such spatial and motion constraints facilitate the future frame prediction
-                            for normal events, and consequently facilitate to identify those abnormal events that do not
-                            conform the expectation. Extensive experiments on both a toy dataset and some publicly available
-                            datasets validate the effec- tiveness of our method in terms of robustness to the un- certainty
-                            in normal events and the sensitivity to abnormal events.</p>
+
+                        <a href="project/eccv2018_zhangzh1.html"></a>
+                        <center>
+                            <img src="img/project/eccv2018_zhangzh1.png" width="1000">
+                        </center>
+                        </a>
                     </div>
+                </div>
+                <hr/>
 
-                    <h2>Citation</h2>
-                    If you find this useful, please cite our work as follows:
+                <!-- tpami2018_xuyy2 -->
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="project/tpami2018_xuyy2.html">Multi-column CNN and its Applications for Crowd Counting and Face Alignment</a>
+                            <br>
+                            <small>Yanyu Xu, Shenghua Gao, Yingying Zhang, Yi Ma</small>
+                        </h4>
 
-                    <pre>
-@INPROCEEDINGS{liu2018ano_pred, 
-        author={W. Liu and W. Luo, D. Lian and S. Gao}, 
-        booktitle={2018 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
-        title={Future Frame Prediction for Anomaly Detection -- A New Baseline}, 
-        year={2018} 
-}</pre>
-                </p>
+                        <small>Submitted to
+                            <strong>
+                                <font color="red">TPAMI</font>
+                            </strong>
+                            (under review)
+                        </small>
+                        <br>
+
+
+                        <a href="project/tpami2018_xuyy2.html"></a>
+                        <center>
+                            <img src="img/project/tpami2018_xuyy2.png" width="1000">
+                        </center>
+                        </a>
+                    </div>
+                </div>
+                <hr/>
+
+                <!-- cvpr2018_liuw1 -->
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="project/cvpr2018_liuw1.html">Future Frame Prediction for Anomaly Detection - A New Baseline</a>
+                            <br>
+                            <small>Wen Liu
+                                <sup>*</sup>, Weixin Luo
+                                <sup>*</sup>, Dongze Lian, Shenghua Gao</small>
+                        </h4>
+
+
+                        <small>Accepted by
+                            <strong>
+                                <font color="red">CVPR 2018</font>
+                            </strong>
+                            <a href="https://arxiv.org/abs/1712.09867" target="_blank" style="color: #990000">[Paper]</a>
+                            <a href="https://github.com/StevenLiuWen/ano_pred_cvpr2018" target="_blank" style="color: #990000">[Code (Tensorflow)]</a>
+                        </small>
+
+
+                        <a href="project/cvpr2018_liuw1.html"></a>
+                        <center>
+                            <img src="img/project/p1.png" width="1000">
+                        </center>
+                        </a>
+                    </div>
+                </div>
+                <hr/>
+
+                <!-- cvpr2018_xuyy1 -->
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="project/cvpr2018_xuyy1.html">Encoding Crowd Interaction with Deep Neural Network for Pedestrian Trajectory Prediction</a>
+                            <br>
+                            <small>Yanyu Xu
+                                <sup>*</sup>, Zhixin Piao
+                                <sup>*</sup>, Shenghua Gao</small>
+                        </h4>
+
+
+                        <small>Accepted by
+                            <strong>
+                                <font color="red">CVPR 2018</font>
+                            </strong>
+                        </small>
+                        <br>
+
+
+                        <a href="project/cvpr2018_xuyy1.html"></a>
+                        <center>
+                            <img src="img/project/cvpr2018_xuyy1.png" width="700">
+                        </center>
+                        </a>
+                    </div>
+                </div>
+                <hr/>
+
+                <!-- cvpr2018_xuyy2 -->
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="project/cvpr2018_xuyy2.html">Gaze Prediction in Dynamic 360 Immersive Videos</a>
+                            <br>
+                            <small>Yanyu Xu, Yanbing Dong, Junru Wu, Zhengzhong Sun, Zhiru Shi, Jingyi Yu, Shenghua Gao</small>
+                        </h4>
+
+
+                        <small>Accepted by
+                            <strong>
+                                <font color="red">CVPR 2018</font>
+                            </strong>
+                        </small>
+                        <br>
+
+
+                        <a href="project/cvpr2018_xuyy2.html"></a>
+                        <center>
+                            <img src="img/project/cvpr2018_xuyy2.png" width="800">
+                        </center>
+                        </a>
+                    </div>
+                </div>
+                <hr/>
+
+                <!-- cvpr2018_wangzw -->
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="project/cvpr2018_wangzw1.html">Face Aging With Identity-Preserved Conditional Generative Adversarial Networks</a>
+                            <br>
+                            <small>Zongwei Wang, Xu Tang, Weixin Luo, Shenghua Gao</small>
+                        </h4>
+
+                        <small>Accepted by
+                            <strong>
+                                <font color="red">CVPR 2018</font>
+                            </strong>
+                        </small>
+                        <br>
+
+
+                        <!-- <a href="project/cvpr2018_wangzw1.html"></a>
+                        <center>
+                            <img src="img/project/cvpr2018_wangzw1.png" width="800">
+                        </center>
+                        </a> -->
+                    </div>
+                </div>
+                <hr/>
+
+                <!-- cvpr2018_huangk -->
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="project/cvpr2018_huangk1.html">Learning to Parse Wireframes in Images of Man-Made Environments</a>
+                            <br>
+                            <small>Kun Huang, Yifan Wang, Zihan Zhou, Tianjiao Ding, Shenghua Gao, Yi Ma</small>
+                        </h4>
+
+                        <small>Accepted by
+                            <strong>
+                                <font color="red">CVPR 2018</font>
+                            </strong>
+                        </small>
+                        <br>
+
+
+                        <!-- <a href="project/cvpr2018_wangzw1.html"></a>
+                                        <center>
+                                            <img src="img/project/cvpr2018_wangzw1.png" width="800">
+                                        </center>
+                                        </a> -->
+                    </div>
+                </div>
+                <hr/>
+
+                <!-- tpami2018_xuyy -->
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="project/tpami2018_xuyy1.html">Personalized Saliency and its Prediction</a>
+                            <br>
+                            <small>Yanyu Xu, Junru Wu, Nianyi Li, Shenghua Gao, Jingyi Yu</small>
+                        </h4>
+
+                        <small>Submitted to
+                            <strong>
+                                <font color="red">TPAMI</font>
+                            </strong>
+                            (minor revision)
+                        </small>
+                        <br>
+
+
+                        <a href="project/tpami2018_xuyy1.html"></a>
+                        <center>
+                            <img src="img/project/tpami2018_xuyy1.png" width="1000">
+                        </center>
+                        </a>
+                    </div>
+                </div>
+                <hr/>
+
+                <!-- eccvw2016_xuyy1 -->
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="project/eccvw2016_xuyy1.html">Bi-Level Multi-Column Convolutional Neural Networks for Facial Landmark Point Detection</a>
+                            <br>
+                            <small>Yanyu Xu, Shenghua Gao</small>
+                        </h4>
+
+                        <small>Accepted by
+                            <strong>
+                                <font color="red">ECCV 2016 Workshop</font>
+                            </strong>
+                        </small>
+                        <br>
+
+
+                        <a href="project/eccvw2016_xuyy1.html"></a>
+                        <center>
+                            <img src="img/project/eccvw2016_xuyy1.png" width="800">
+                        </center>
+                        </a>
+                    </div>
+                </div>
+                <hr/>
+
             </div>
         </div>
     </div>
@@ -203,6 +357,7 @@
         </div>
     </footer>
     <!-- End Footer -->
+
 
     <script src="js/jquery.min.js"></script>
     <script src="js/all.min.js"></script>
