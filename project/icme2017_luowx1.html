@@ -109,13 +109,16 @@
         <div class="container-fluid">
             <div id="primarycontent">
                 <center>
-                    <h2>Face Aging with Identity-Preserved Conditional Generative Adversarial Network</h2>
+                    <h2>Remembering History with Convolutional LSTM for Anomaly Detection</h2>
                 </center>
                 <center>
                     <h3>
-                        <a href="">Zongwei Wang</a>&nbsp;&nbsp;&nbsp;
-                        <a href="">Xu Tang</a>&nbsp;&nbsp;&nbsp;
-                        <a href="">Weixin Luo</a>&nbsp;&nbsp;&nbsp;
+                        <a href="">Weixin Luo
+                            <sup>*</sup>
+                        </a>&nbsp;&nbsp;&nbsp;
+                        <a href="">Wen Liu
+                            <sup>*</sup>
+                        </a>&nbsp;&nbsp;&nbsp;
                         <a href="">Shenghua Gao</a>
                     </h3>
                 </center>
@@ -125,7 +128,7 @@
                     </h3>
                 </center>
                 <center>
-                    <h3 style="color: #000000">In CVPR 2018</h2>
+                    <h3 style="color: #000000">In ICME 2017</h2>
                 </center>
                 <!-- <center>
                     <h3>
@@ -134,7 +137,7 @@
                     </h3>
                 </center> -->
                 <center>
-                    <img src="../img/project/cvpr2018_wangzw1.png" width="800">
+                    <img src="../img/project/icme2017_luowx1.png" width="800">
                 </center>
                 <p></p>
 
@@ -143,20 +146,18 @@
                     <h2>Abstract</h2>
 
                     <div style="font-size:14px">
-                        <p>Face aging is of great importance for cross-age recognition and entertainment related applications.
-                            However, the lack of labeled faces of the same person across a long age range makes it challenging.
-                            Because of different aging speed of different persons, our face aging approach aims at synthesizing
-                            a face whose target age lies in some given age group instead of synthesizing a face with a certain
-                            age. By grouping faces with target age together, the objective of face aging is equivalent to
-                            transferring aging patterns of faces within the target age group to the face whose aged face
-                            is to be synthesized. Meanwhile, the synthesized face should have the same identity with the
-                            input face. Thus we propose an Identity-Preserved Conditional Generative Adversarial Networks
-                            (IPCGANs) framework, in which a Conditional Generative Adversarial Networks module functions
-                            as generating a face that looks realistic and is with the target age, an identity-preserved module
-                            preserves the identity information and an age classifier forces the generated face with the target
-                            age. Both qualitative and quantitative experiments show that our method can generate more realistic
-                            faces in terms of image quality, person identity and age consistency with human observations.
-
+                        <p>This paper tackles anomaly detection in videos, which is an extremely challenging task because anomaly
+                            is unbounded. We approach this task by leveraging a Convolutional Neural Network (CNN or ConvNet)
+                            for appearance encoding for each frame, and leveraging a Convolutional Long Short Term Memory
+                            (ConvLSTM) for memorizing all past frames which corresponds to the motion information. Then we
+                            integrate ConvNet and ConvLSTM with Auto-Encoder, which is referred to as ConvLSTM-AE, to learn
+                            the regularity of appearance and motion for the ordinary moments. Compared with 3D Convolutional
+                            Auto-Encoder based anomaly detection, our main contribution lies in that we propose a ConvLSTMAE
+                            framework which better encodes the change of appearance and motion for normal events, respectively.
+                            To evaluate our method, we first conduct experiments on a synthesized Moving-MNIST dataset under
+                            controlled settings, and results show that our method can easily identify the change of appearance
+                            and motion. Extensive experiments on real anomaly datasets further validate the effectiveness
+                            of our method for anomaly detection.
                         </p>
                     </div>
 
@@ -164,14 +165,14 @@
                     If you find this useful, please cite our work as follows:
 
                     <pre>
-@inproceedings{wang2018face,
-    title={Face Aging With Identity-Preserved Conditional Generative Adversarial Networks},
-    author={Wang, Zongwei and Tang, Xu and Luo, Weixin and Gao, Shenghua},
-    booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-    pages={7939--7947},
-    year={2018}
-    }
-}</pre>
+@inproceedings{luo2017remembering,
+    title={Remembering history with convolutional lstm for anomaly detection},
+    author={Luo, Weixin and Liu, Wen and Gao, Shenghua},
+    booktitle={Multimedia and Expo (ICME), 2017 IEEE International Conference on},
+    pages={439--444},
+    year={2017},
+    organization={IEEE}
+    }</pre>
                 </p>
             </div>
         </div>

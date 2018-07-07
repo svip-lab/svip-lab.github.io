@@ -109,13 +109,16 @@
         <div class="container-fluid">
             <div id="primarycontent">
                 <center>
-                    <h2>Face Aging with Identity-Preserved Conditional Generative Adversarial Network</h2>
+                    <h2>A Revisit of Sparse Coding Based Anomaly Detection in Stacked RNN Framework</h2>
                 </center>
                 <center>
                     <h3>
-                        <a href="">Zongwei Wang</a>&nbsp;&nbsp;&nbsp;
-                        <a href="">Xu Tang</a>&nbsp;&nbsp;&nbsp;
-                        <a href="">Weixin Luo</a>&nbsp;&nbsp;&nbsp;
+                        <a href="">Weixin Luo
+                            <sup>*</sup>
+                        </a>&nbsp;&nbsp;&nbsp;
+                        <a href="">Wen Liu
+                            <sup>*</sup>
+                        </a>&nbsp;&nbsp;&nbsp;
                         <a href="">Shenghua Gao</a>
                     </h3>
                 </center>
@@ -125,7 +128,7 @@
                     </h3>
                 </center>
                 <center>
-                    <h3 style="color: #000000">In CVPR 2018</h2>
+                    <h3 style="color: #000000">In ICCV 2017</h2>
                 </center>
                 <!-- <center>
                     <h3>
@@ -134,7 +137,7 @@
                     </h3>
                 </center> -->
                 <center>
-                    <img src="../img/project/cvpr2018_wangzw1.png" width="800">
+                    <img src="../img/project/iccv2017_luowx1.png" width="800">
                 </center>
                 <p></p>
 
@@ -143,20 +146,18 @@
                     <h2>Abstract</h2>
 
                     <div style="font-size:14px">
-                        <p>Face aging is of great importance for cross-age recognition and entertainment related applications.
-                            However, the lack of labeled faces of the same person across a long age range makes it challenging.
-                            Because of different aging speed of different persons, our face aging approach aims at synthesizing
-                            a face whose target age lies in some given age group instead of synthesizing a face with a certain
-                            age. By grouping faces with target age together, the objective of face aging is equivalent to
-                            transferring aging patterns of faces within the target age group to the face whose aged face
-                            is to be synthesized. Meanwhile, the synthesized face should have the same identity with the
-                            input face. Thus we propose an Identity-Preserved Conditional Generative Adversarial Networks
-                            (IPCGANs) framework, in which a Conditional Generative Adversarial Networks module functions
-                            as generating a face that looks realistic and is with the target age, an identity-preserved module
-                            preserves the identity information and an age classifier forces the generated face with the target
-                            age. Both qualitative and quantitative experiments show that our method can generate more realistic
-                            faces in terms of image quality, person identity and age consistency with human observations.
-
+                        <p>Motivated by the capability of sparse coding based anomaly detection, we propose a Temporally-coherent
+                            Sparse Coding (TSC) where we enforce similar neighbouring frames be encoded with similar reconstruction
+                            coefficients. Then we map the TSC with a special type of stacked Recurrent Neural Network (sRNN).
+                            By taking advantage of sRNN in learning all parameters simultaneously, the nontrivial hyper-parameter
+                            selection to TSC can be avoided, meanwhile with a shallow sRNN, the reconstruction coefficients
+                            can be inferred within a forward pass, which reduces the computational cost for learning sparse
+                            coefficients. The contributions of this paper are two-fold: i) We propose a TSC, which can be
+                            mapped to a sRNN which facilitates the parameter optimization and accelerates the anomaly prediction.
+                            ii) We build a very large dataset which is even larger than the summation of all existing dataset
+                            for anomaly detection in terms of both the volume of data and the diversity of scenes. Extensive
+                            experiments on both a toy dataset and real datasets demonstrate that our TSC based and sRNN based
+                            method consistently outperform existing methods, which validates the effectiveness of our method.
                         </p>
                     </div>
 
@@ -164,13 +165,14 @@
                     If you find this useful, please cite our work as follows:
 
                     <pre>
-@inproceedings{wang2018face,
-    title={Face Aging With Identity-Preserved Conditional Generative Adversarial Networks},
-    author={Wang, Zongwei and Tang, Xu and Luo, Weixin and Gao, Shenghua},
-    booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-    pages={7939--7947},
-    year={2018}
-    }
+@article{luo2017revisit,
+    title={A revisit of sparse coding based anomaly detection in stacked rnn framework},
+    author={Luo, Weixin and Liu, Wen and Gao, Shenghua},
+    journal={ICCV, Oct},
+    volume={1},
+    number={2},
+    pages={3},
+    year={2017}
 }</pre>
                 </p>
             </div>
