@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+
+    <!-- <meta property="og:image" content="https://junyanz.github.io/CycleGAN/images/teaser_fb.jpg" />
+    <meta property="og:title" content="Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks" /> -->
+
+
+    <title>CVDL@ShanghaiTech</title>
+    <meta name="description" content="">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic' rel='stylesheet' type='text/css'>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <!-- Stylesheet -->
+
+    <!-- <link media="all" href="css/glab.css" type="text/css" rel="StyleSheet"> -->
+    <!-- <style type="text/css" media="all">
+        IMG {
+            PADDING-RIGHT: 0px;
+            PADDING-LEFT: 0px;
+            FLOAT: right;
+            PADDING-BOTTOM: 0px;
+            PADDING-TOP: 0px;
+        }
+
+        #primarycontent {
+            MARGIN-LEFT: auto;
+            WIDTH: expression(document.body.clientWidth > 1000? "1000px": "auto");
+            MARGIN-RIGHT: auto;
+            TEXT-ALIGN: left;
+            max-width: 1000px;
+        }
+
+        h2 {
+            color: #004798;
+        }
+
+        BODY {
+            TEXT-ALIGN: center
+        }
+    </style> -->
+</head>
+
+
+<body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
+    <!--[if lt IE 10]>
+        <p class="oldie">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> to better experience this site.</p>
+    <![endif]-->
+
+    <!-- Start Header -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand scroll" href="../index.html">
+                    <img src="../img/logo.png" alt="ShanghaiTech">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse scrollspy" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="scroll" href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="../news.html">News</a>
+                    </li>
+                    <!-- <li><a class="scroll" href="/events">Event</a></li> -->
+                    <li>
+                        <a class="scroll" href="../team.html">Team</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="../publication.html">Publication</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="../projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="../datasets.html">Datasets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Header -->
+
+
+    <div class="news top-container">
+        <div class="container-fluid">
+            <div id="primarycontent">
+                <center>
+                    <h2>Gaze Prediction in Dynamic 360 Immersive Videos</h2>
+                </center>
+                <center>
+                    <h3>
+                        <a href="">Ziheng Zhang</a>&nbsp;&nbsp;&nbsp;
+                        <a href="">Yanyu Xu</a>&nbsp;&nbsp;&nbsp;
+                        <a href="">Jingyi Yu</a>&nbsp;&nbsp;&nbsp;
+                        <a href="">Shenghua Gao</a>
+                    </h3>
+                </center>
+                <center>
+                    <h3>
+                        <a href="http://www.shanghaitech.edu.cn" target="_blank">ShanghaiTech University</a>
+                    </h3>
+                </center>
+                <center>
+                    <h3 style="color: #000000">In ECCV 2018</h2>
+                </center>
+                <!-- <center>
+                    <h3>
+                        <a href="https://arxiv.org/abs/1712.09867" target="_blank" style="color: #990000">[Paper]</a>
+                        <a href="https://github.com/StevenLiuWen/ano_pred_cvpr2018" target="_blank" style="color: #990000">[Code (Tensorflow)]</a>
+                    </h3>
+                </center> -->
+                <center>
+                    <img src="../img/project/accv2018_gaze.png" width="1000">
+                </center>
+                <p></p>
+
+
+                <p>
+                    <h2>Abstract</h2>
+
+                    <div style="font-size:14px">
+                            By borrowing the wisdom of human in gaze following, we propose a two-stage solution for gaze point prediction of the target persons in a scene. Specifically, in the first stage, both head image and its position are fed into a gaze direction pathway to predict the gaze direction, and then multi-scale gaze direction fields are generated to characterize the distribution of gaze points without considering the scene contents. In the second stage, the multi-scale gaze direction fields are concatenated with the image contents and fed into a heatmap pathway for heatmap regression. There are two merits for our two-stage solution based gaze following: i) our solution mimics the behavior of human in gaze following, therefore it is more psychological plausible; ii) besides using heatmap to supervise the output of our network, we can also leverage gaze direction to facilitate the training of gaze direction pathway, therefore our network can be more robustly trained. Considering that existing gaze following dataset is annotated by the third-view persons, we build a video gaze following dataset, where the ground truth is annotated by the observers in the videos. Therefore it is more reliable. The evaluation with such a dataset reflects the capacity of different methods in real scenarios better. Extensive experiments on both datasets show that our method significantly outperforms existing methods, which validates the effectiveness of our solution for gaze following. Our dataset and codes are released in \url{https://github.com/svip-lab/GazeFollowing}.
+                        </p>
+                    </div>
+
+                    <!-- <h2>Citation</h2>
+                    If you find this useful, please cite our work as follows:
+
+                    <pre>
+@INPROCEEDINGS{xu2018gaze, 
+        author={Yanyu Xu and Yanbing Dong and Junru Wu and Zhengzhong Sun and Zhiru Shi and Jingyi Yu  and Shenghua Gao}, 
+        booktitle={2018 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+        title={Gaze Prediction in Dynamic 360 Immersive Videos}, 
+        year={2018} 
+}</pre> -->
+                </p>
+            </div>
+
+             <!-- disqus -->
+            <br>
+            <hr/>
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document,
+                        s = d.createElement('script');
+                    s.src = 'https://shanghaitechcvdl.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the
+                <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+            </noscript>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Start Footer -->
+    <footer class="main-footer">
+        <div class="container-fluid">
+            <ul class="social">
+                <li>
+                    <a href="/feed.xml">
+                        <svg class="icon icon-feed">
+                            <use xlink:href="#icon-feed"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <small>
+                Template by
+                <a href="https://github.com/obaez/dentistsmile">obaez</a> by
+                <a href="https://raw.githubusercontent.com/obaez/dentistsmile/master/LICENSE.md">MIT License</a>.
+            </small>
+            <small> © 2018 CVDL @ ShanghaiTech - All rights reserved </small>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/all.min.js"></script>
+</body>
+
+</html>
