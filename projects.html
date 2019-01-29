@@ -63,21 +63,10 @@
             font-size: 35px;
         }
 
-        /* Maintained by @karpathy */
-        #signature {
-            position: absolute;
-            bottom: auto;
-            right: 0;
-            text-align: center;
-            padding-bottom: 15px;
-            padding-right: 30px;
-            /*font-size: 14px;*/
-        }
-
         /* The cells that contain each deadline */
         .dd {
-            padding: 10px;
-            margin-bottom: 3px;
+            /* padding: 10px; */
+            /* margin-bottom: 3px; */
             /* background-color: #EEE; */
             /* background-color: #FFF;
             border: 1px solid #DDD; */
@@ -97,7 +86,7 @@
             float: right;
             font-size: 18px;
             /* font-weight: bold; */
-            margin-top: 16px;
+            margin-top: 6px;
         }
 
         /* Area description div */
@@ -114,14 +103,6 @@
             font-size: 16px;
         }
 
-        /* Warning div */
-        .wd {
-            position: absolute;
-            bottom: 10px;
-            right: 8px;
-            color: #700;
-            font-size: 10px;
-        }
     </style>
 
     <script type="text/javascript">
@@ -298,7 +279,7 @@
                         "<div class=\"vd\">" + dl.venue + " (" + dl.area + ")" + "</div>" +
                         // "<div class=\"ad\">" +  + "</div>" +
                         "<div class=\"td\">Deadline: " + timeDescription(dl.deadline) + "</div>" +
-                        "<div class=\"wd\">" + warningString + "</div> </font>" +
+                        "<div class=\"wd\">" + warningString + "</div> </font> <hr>" +
                         suffix
                     );
                     $("#deadline" + i).show();
