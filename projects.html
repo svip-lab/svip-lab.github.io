@@ -102,18 +102,17 @@
             /* font-weight: bold; */
             font-size: 16px;
         }
-
     </style>
 
     <script type="text/javascript">
         // DATABASE
         var deadlines = new Array();
         var shouldDisplay = {
-            "Machine Learning": true,
-            "Algorithms": true,
-            "AI": true,
-            "Computational Biology": true,
-            "Linguistics": true
+            "A+": true,
+            "A": true,
+            "B+": true,
+            "B": true,
+            "C": true
         }
         // Machine Learning
         deadlines.push({
@@ -124,31 +123,24 @@
             approx: 0,
         });
         deadlines.push({
-            venue: "NeurIPS",
-            area: "Machine Learning",
-            deadline: moment("2018-05-18 20:00:00 -0000", "YYYY-MM-DD HH:mm:ss Z"),
+            venue: "ICCV 2019",
+            area: "A",
+            deadline: moment("2019-05-18 20:00:00 -0000", "YYYY-MM-DD HH:mm:ss Z"),
             website: "https://nips.cc/",
             approx: 0,
         });
         deadlines.push({
             venue: "IJCAI",
-            area: "AI",
+            area: "B",
             deadline: moment("2019-02-25 23:59:59 -1200", "YYYY-MM-DD HH:mm:ss Z"),
             website: "https://www.ijcai19.org/important-dates.html",
             approx: 0,
         });
         deadlines.push({
             venue: "AAAI",
-            area: "AI",
-            deadline: moment("2018-09-05 23:59:00 -1000", "YYYY-MM-DD HH:mm:ss Z"),
+            area: "C",
+            deadline: moment("2019-09-05 23:59:00 -1000", "YYYY-MM-DD HH:mm:ss Z"),
             website: "https://aaai.org/Conferences/AAAI-19/",
-            approx: 0,
-        });
-        deadlines.push({
-            venue: "KDD",
-            area: "AI",
-            deadline: moment("2019-02-03 23:59:00 -0800", "YYYY-MM-DD HH:mm:ss Z"),
-            website: "https://www.kdd.org/kdd2019",
             approx: 0,
         });
 
@@ -305,20 +297,24 @@
         <div class="container-fluid">
             <div class="post">
                 <header>
-                    <h1>Project</h1>
+                    <h1>Project </h1>
                     <div id="currtime"></div>
                     <hr />
-                </header>
-                <div class="raw">
-                    <div class="col-sm-9 col-md-offset-1">
-                        <div id="all_checkbox" style="display: none;">
-                            Machine Learning<input type="checkbox" id="Machine Learning" onclick="" checked>
-                            AI<input type="checkbox" id="AI" onclick="" checked>
-                            Computational Biology<input type="checkbox" id="Computational Biology" onclick="" checked>
-                            Algorithms<input type="checkbox" id="Algorithms" onclick="" checked>
-                            Linguistics<input type="checkbox" id="Linguistics" onclick="" checked>
-                        </div>
 
+                </header>
+                <div class="row">
+                    <div class="col-sm-9 col-md-offset-1">
+                        <!-- <div id="all_checkbox" style="display: none;"> -->
+                        <div id="all_checkbox" style="font-size: 14px;">
+                            <center>
+                                A+ (5分)<input type="checkbox" id="A+" onclick="" checked>
+                                A (3分)<input type="checkbox" id="A" onclick="" checked>
+                                B+ (2分)<input type="checkbox" id="B+" onclick="" checked>
+                                B (1分)<input type="checkbox" id="B" onclick="" checked>
+                                C (0分)<input type="checkbox" id="C" onclick="" checked>
+                            </center>
+                        </div>
+                        <br>
                         <div id="deadlinesdiv"></div>
                     </div>
                 </div>
