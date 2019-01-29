@@ -86,7 +86,7 @@
             float: right;
             font-size: 18px;
             /* font-weight: bold; */
-            margin-top: 6px;
+            margin-top: 15px;
         }
 
         /* Area description div */
@@ -116,34 +116,85 @@
         }
         // Machine Learning
         deadlines.push({
-            venue: "ICML",
-            area: "Machine Learning",
-            deadline: moment("2019-01-18 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
-            website: "http://icml.cc",
-            approx: 0,
-        });
-        deadlines.push({
             venue: "ICCV 2019",
             area: "A",
-            deadline: moment("2019-05-18 20:00:00 -0000", "YYYY-MM-DD HH:mm:ss Z"),
-            website: "https://nips.cc/",
+            deadline: moment("2019-03-22 23:59:59 -0800", "YYYY-MM-DD HH:mm:ss Z"),
+            website: "http://iccv2019.thecvf.com/",
+            location: "Seoul, South Korea (韩国 首尔)", 
             approx: 0,
         });
         deadlines.push({
-            venue: "IJCAI",
-            area: "B",
+            venue: "IJCAI 2019",
+            area: "A",
             deadline: moment("2019-02-25 23:59:59 -1200", "YYYY-MM-DD HH:mm:ss Z"),
             website: "https://www.ijcai19.org/important-dates.html",
+            location: "Macao, China (中国 澳门)", 
             approx: 0,
         });
         deadlines.push({
-            venue: "AAAI",
-            area: "C",
-            deadline: moment("2019-09-05 23:59:00 -1000", "YYYY-MM-DD HH:mm:ss Z"),
-            website: "https://aaai.org/Conferences/AAAI-19/",
+            venue: "NIPS 2019 (TBD)",
+            area: "A+",
+            deadline: moment("2019-05-19 23:59:59 -1200", "YYYY-MM-DD HH:mm:ss Z"),
+            website: "https://nips.cc/Conferences/2019",
+            location: "Vancouver, BC, Canada (加拿大 温哥华)", 
             approx: 0,
         });
-
+        deadlines.push({
+            venue: "MICCAI 2019",
+            area: "A",
+            deadline: moment("2019-04-02 23:59:59 -0700", "YYYY-MM-DD HH:mm:ss Z"),
+            website: "http://www.miccai2019.org/",
+            location: "Shenzhen, China (中国 深圳)", 
+            approx: 0,
+        });
+        deadlines.push({
+            venue: "AAAI 2020 (TBD)",
+            area: "A",
+            deadline: moment("2019-09-05 23:59:00 -1000", "YYYY-MM-DD HH:mm:ss Z"),
+            website: "https://aaai.org/Conferences/AAAI-19/",
+            location: "TBD", 
+            approx: 0,
+        });
+        deadlines.push({
+            venue: "ACMMM 2019",
+            area: "B+",
+            deadline: moment("2019-04-01 23:59:59 -1200", "YYYY-MM-DD HH:mm:ss Z"),
+            website: "http://www.acmmm.org/2019",
+            location: "Nice, France (法国 尼斯)", 
+            approx: 0,
+        });
+        deadlines.push({
+            venue: "BMVC 2019",
+            area: "B+",
+            deadline: moment("2019-04-29 23:59:59 -1200", "YYYY-MM-DD HH:mm:ss Z"),
+            website: "http://bmvc2019.org",
+            location: "Cardiff University, United Kingdom (英国 卡迪夫大学)", 
+            approx: 0,
+        });
+        deadlines.push({
+            venue: "CVPR 2020 (TBD)",
+            area: "A",
+            deadline: moment("2019-11-16 23:59:59 -0800", "YYYY-MM-DD HH:mm:ss Z"),
+            website: "http://cvpr2020.thecvf.com/",
+            location: "Seattle, United States (美国 西雅图)", 
+            approx: 0,
+        });
+        deadlines.push({
+            venue: "ICLR 2020 (TBD)",
+            area: "A+",
+            deadline: moment("2019-09-27 23:59:59 -0400", "YYYY-MM-DD HH:mm:ss Z"),
+            website: "https://iclr.cc/",
+            location: "Addis Ababa, Ethiopia (埃塞俄比亚 亚的斯亚贝巴)", 
+            approx: 0,
+        });
+        deadlines.push({
+            venue: "SIGGRAPH Asia 2019 (TBD)",
+            area: "A+",
+            deadline: moment("2019-06-05 23:59:59 -0000", "YYYY-MM-DD HH:mm:ss Z"),
+            website: "https://sa2019.siggraph.org/",
+            location: "Brisbane, Australia (澳大利亚 布里斯班)", 
+            approx: 0,
+        });
         // HELPER FUNCTIONS
         var timeDescription = function (x) {
             return x.format("MM/DD/YYYY h:mm:ss A");
@@ -192,7 +243,7 @@
                         prefix + "<font color=\"black\"> <div class=\"tld\">" + timeLeftDescription(timeLeft) +
                         "</div>" +
                         "<div class=\"vd\">" + dl.venue + " (" + dl.area + ")" + "</div>" +
-                        // "<div class=\"ad\">" +  + "</div>" +
+                        "<div class=\"td\">Location: " + dl.location + "</div>" +
                         "<div class=\"td\">Deadline: " + timeDescription(dl.deadline) + "</div>" +
                         "<div class=\"wd\">" + warningString + "</div> </font> <hr>" +
                         suffix
