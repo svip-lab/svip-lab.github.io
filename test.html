@@ -308,7 +308,7 @@
       });
       // create divs for all deadlines and insert into DOM
       for (var i = 0; i < deadlines.length; i++) {
-        if (deadlines[i].approx == 1){
+        if (deadlines[i].approx == 1) {
           continue;
         }
         $("<div class=dd id=deadline" + i + "></div>").appendTo("div#deadlinesdiv");
