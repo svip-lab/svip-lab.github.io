@@ -6,19 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
-    <title>CVDL@ShanghaiTech</title>
+
+    <title>Shanghaitech Vision and Intelligent Perception(SVIP) LAB</title>
     <meta name="description" content="">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml">
 
-    <script src="../../js/jquery.min.js"></script>
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="/css/main.css" rel='stylesheet' type='text/css'>
+
+
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic' rel='stylesheet' type='text/css'>
 
-    <script src="../../js/marked.min.js"></script>
-    <link rel="stylesheet" href="../../css/github-markdown.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/small_logo.png">
+</head>
+
+<body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
+    <div class="navigation"></div>
+
+    <article class="markdown-body">
+        <div id="content"></div>
+    </article>
+
+    <div class="footer"></div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/all.min.js"></script>
+
+    <script src="/js/marked.min.js"></script>
+    <link rel="stylesheet" href="/css/github-markdown.min.css">
     <style>
         .markdown-body {
             box-sizing: border-box;
@@ -36,87 +53,21 @@
     </style>
 
     <script>
+        $(document).ready(function () {
+            $(".common-news").load("/common/news.html");
+            $(".footer").load("/common/footer.html");
+            $(".navigation").load("/common/navigation.html");
+        });
+
         $.ajax({
-        type: "GET",//请求方式
-        url: "../../markdown/accv2018.md",//地址，就是json文件的请求路径
-        dataType: "text",//数据类型可以为 text xml json  script  jsonp
-        success: function (result) {//返回的参数就是 action里面所有的有get和set方法的参数
-            document.getElementById('content').innerHTML = marked(result);
-        }
-    });
+            type: "GET", //请求方式
+            url: "/markdown/accv2018.md", //地址，就是json文件的请求路径
+            dataType: "text", //数据类型可以为 text xml json  script  jsonp
+            success: function (result) { //返回的参数就是 action里面所有的有get和set方法的参数
+                document.getElementById('content').innerHTML = marked(result);
+            }
+        });
     </script>
-</head>
-
-<body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand scroll" href="../../index.html">
-                    <img src="../../img/logo.png" alt="ShanghaiTech">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse scrollspy" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="scroll" href="../../index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="scroll" href="../../news.html">News</a>
-                    </li>
-                    <!-- <li><a class="scroll" href="/events">Event</a></li> -->
-                    <li>
-                        <a class="scroll" href="../../team.html">Team</a>
-                    </li>
-                    <li>
-                        <a class="scroll" href="../../publication.html">Publication</a>
-                    </li>
-                    <li>
-                        <a class="scroll" href="../../projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a class="scroll" href="../../datasets.html">Datasets</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End Header -->
-
-    <article class="markdown-body">
-        <div id="content"></div>
-    </article>
-
-    <!-- Start Footer -->
-    <footer class="main-footer">
-        <div class="container-fluid">
-            <ul class="social">
-                <li>
-                    <a href="/feed.xml">
-                        <svg class="icon icon-feed">
-                            <use xlink:href="#icon-feed"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-            <small>
-                Template by
-                <a href="https://github.com/obaez/dentistsmile">obaez</a> by
-                <a href="https://raw.githubusercontent.com/obaez/dentistsmile/master/LICENSE.md">MIT License</a>.
-            </small>
-            <small> © 2018 CVDL @ ShanghaiTech - All rights reserved </small>
-        </div>
-    </footer>
-    <!-- End Footer -->
-    <script src="../../js/jquery.min.js"></script>
-    <script src="../../js/all.min.js"></script>
 </body>
 
 </html>
