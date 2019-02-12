@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+
+    <title>Shanghaitech Vision and Intelligent Perception(SVIP) LAB</title>
+    <meta name="description" content="">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/main.css" rel='stylesheet' type='text/css'>
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic' rel='stylesheet' type='text/css'>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/small_logo.png">
+</head>
+
+<body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
+    <div class="navigation"></div>
+
+    <div class="news top-container">
+        <div class="container-fluid">
+            <div id="primarycontent">
+                <center>
+                    <h2>ShanghaiTech Campus dataset (Anomaly Detection)</h2>
+                </center>
+                <center>
+                    <h3>
+                        <a href="http://www.shanghaitech.edu.cn" target="_blank">ShenghaiTech University</a>
+                    </h3>
+                </center>
+                <center>
+                    <h3>
+                        <a href="https://onedrive.live.com/?authkey=%21AMqh2fTSemfrokE&id=3705E349C336415F%215109&cid=3705E349C336415F "
+                            target="_blank" style="color: #990000">[Download (Onedrive)]</a>
+                    </h3>
+                </center>
+                <center>
+                    <a href="https://junyanz.github.io/CycleGAN/images/teaser_high_res.jpg">
+                        <img src="/img/dataset/SHTU_Campus/show.png" width="1000"> </a>
+                </center>
+                <p></p>
+
+
+                <p>
+                    <h2>Introduction</h2>
+
+                    <div style="font-size:14px">
+                        <p>It is desirable that the anomaly detection model trained can be directly applied in multiple
+                            scenes
+                            with multiple view angles. However, almost all existing datasets only contain videos
+                            captured
+                            with one fixed angle camera, and it lacks diversity of scenes and view angles. To increase
+                            scene
+                            diversity, we build a new anomaly detection dataset. Further we introduce the anomalies
+                            caused
+                            by sudden motion in this dataset, such as chasing and brawling in our dataset, which are
+                            not
+                            included in existing datasets. These characteristics make our dataset more suitable in real
+                            scenarios.
+                            To better understand the differences between our dataset and existing anomaly detection
+                            datasets,
+                            we briefly summarize all anomaly detection datasets as follows:
+                        </p>
+
+                        <p>
+                            <strong>CUHK Avenue dataset [1]</strong> contains 16 training videos and 21 testing videos
+                            with a total
+                            of 47 abnormal events, including throwing objects, loitering and running. The size of
+                            people
+                            may change because of the camera position and angle.
+                        </p>
+
+                        <p>
+                            <strong>Pedestrian 1 (Ped1) dataset [2]</strong> includes 34 training videos and 36 testing
+                            videos with
+                            40 irregular events. All of these abnormal cases are about vehicles such as bicycles and
+                            cars.
+                            Pedestrian 2 (Ped2) [2] dataset contains 16 training videos and 12 testing videos with 12
+                            abnormal
+                            events. The definition of anomaly for Ped2 is the same with Ped1.
+                        </p>
+
+                        <p>
+                            <strong>Subway dataset [3]</strong> are 2 hours long in total. There are two categories,
+                            i.e. Entrance
+                            and Exit. Unusual events contain walking in wrong directions and loitering. More
+                            importantly,
+                            this dataset is recorded in indoor environment while above ones are recorded in outdoor
+                            environment.
+
+                        </p>>
+
+                    </div>
+
+                    <h2>ShanghaiTech Campus</h2>
+                    <p>
+                        ShanghaiTech Campus dataset has 13 scenes with complex light conditions and camera angles. It
+                        contains 130 abnormal events
+                        and over 270, 000 training frames. Moreover, pixel level ground truth of abnormal events is
+                        also
+                        annotated in our dataset.
+                    </p>
+
+                    <center>
+                        <img src="/img/dataset/SHTU_Campus/table.png">
+                    </center>
+
+                    <h2>Citation</h2>
+                    If you find this useful, please cite our work as follows:
+
+                    <pre>
+@INPROCEEDINGS{liu2018ano_pred, 
+        author={W. Liu and W. Luo, D. Lian and S. Gao}, 
+        booktitle={2018 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+        title={Future Frame Prediction for Anomaly Detection -- A New Baseline}, 
+        year={2018} 
+}</pre>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/all.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".footer").load("/common/footer.html");
+            $(".navigation").load("/common/navigation.html");
+        });
+    </script>
+
+</body>
+
+</html>
