@@ -7,102 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
 
-    <!-- <meta property="og:image" content="https://junyanz.github.io/CycleGAN/images/teaser_fb.jpg" />
-    <meta property="og:title" content="Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks" /> -->
-
-
-    <title>CVDL@ShanghaiTech</title>
+    <title>Shanghaitech Vision and Intelligent Perception(SVIP) LAB</title>
     <meta name="description" content="">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="/css/main.css" rel='stylesheet' type='text/css'>
+
 
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic' rel='stylesheet' type='text/css'>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.png">
-
-    <!-- Stylesheet -->
-
-    <!-- <link media="all" href="css/glab.css" type="text/css" rel="StyleSheet"> -->
-    <!-- <style type="text/css" media="all">
-        IMG {
-            PADDING-RIGHT: 0px;
-            PADDING-LEFT: 0px;
-            FLOAT: right;
-            PADDING-BOTTOM: 0px;
-            PADDING-TOP: 0px;
-        }
-
-        #primarycontent {
-            MARGIN-LEFT: auto;
-            WIDTH: expression(document.body.clientWidth > 1000? "1000px": "auto");
-            MARGIN-RIGHT: auto;
-            TEXT-ALIGN: left;
-            max-width: 1000px;
-        }
-
-        h2 {
-            color: #004798;
-        }
-
-        BODY {
-            TEXT-ALIGN: center
-        }
-    </style> -->
+    <link rel="shortcut icon" href="/img/small_logo.png">
 </head>
 
 
 <body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
-    <!--[if lt IE 10]>
-        <p class="oldie">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> to better experience this site.</p>
-    <![endif]-->
-
-    <!-- Start Header -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand scroll" href="../index.html">
-                    <img src="../img/logo.png" alt="ShanghaiTech">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse scrollspy" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="scroll" href="../index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="scroll" href="../news.html">News</a>
-                    </li>
-                    <!-- <li><a class="scroll" href="/events">Event</a></li> -->
-                    <li>
-                        <a class="scroll" href="../team.html">Team</a>
-                    </li>
-                    <li>
-                        <a class="scroll" href="../publication.html">Publication</a>
-                    </li>
-                    <li>
-                        <a class="scroll" href="../projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a class="scroll" href="../datasets.html">Datasets</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End Header -->
+    <div class="navigation"></div>
 
 
     <div class="news top-container">
@@ -141,15 +64,24 @@
                     <h2>Abstract</h2>
 
                     <div style="font-size:14px">
-                        <p>We propose a bi-level Multi-column Convolutional Neural Networks (MCNNs) framework for face alignment.
-                            Global CNNs are used to roughly estimate the coordinates of all landmark points, and Local CNNs
-                            take patches sampled from the landmarks predicted by Global CNNs as input to predict the displacement
-                            between the ground truth and the landmark predicted by Global CNNs. The multi-column architecture
-                            leverages the findings that the optimal resolutions for different points are different. Further,
-                            the coordinates of all landmark and their displacement are simultaneously estimated in Global
-                            and Local CNNs, hence global shape constraints are naturally and implicitly imposed to make it
-                            very robust to significant variations in pose, expression, occlusion, and illumination. Extensive
-                            experiments demonstrate our method achieves state of the art performance for both image and video
+                        <p>We propose a bi-level Multi-column Convolutional Neural Networks (MCNNs) framework for face
+                            alignment.
+                            Global CNNs are used to roughly estimate the coordinates of all landmark points, and Local
+                            CNNs
+                            take patches sampled from the landmarks predicted by Global CNNs as input to predict the
+                            displacement
+                            between the ground truth and the landmark predicted by Global CNNs. The multi-column
+                            architecture
+                            leverages the findings that the optimal resolutions for different points are different.
+                            Further,
+                            the coordinates of all landmark and their displacement are simultaneously estimated in
+                            Global
+                            and Local CNNs, hence global shape constraints are naturally and implicitly imposed to make
+                            it
+                            very robust to significant variations in pose, expression, occlusion, and illumination.
+                            Extensive
+                            experiments demonstrate our method achieves state of the art performance for both image and
+                            video
                             based face alignment on many publicly available datasets.
                         </p>
                     </div>
@@ -169,7 +101,7 @@
             </div>
             <!-- disqus -->
             <br>
-            <hr/>
+            <hr />
             <div id="disqus_thread"></div>
             <script>
                 /**
@@ -191,30 +123,16 @@
     </div>
 
 
-    <!-- Start Footer -->
-    <footer class="main-footer">
-        <div class="container-fluid">
-            <ul class="social">
-                <li>
-                    <a href="/feed.xml">
-                        <svg class="icon icon-feed">
-                            <use xlink:href="#icon-feed"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-            <small>
-                Template by
-                <a href="https://github.com/obaez/dentistsmile">obaez</a> by
-                <a href="https://raw.githubusercontent.com/obaez/dentistsmile/master/LICENSE.md">MIT License</a>.
-            </small>
-            <small> © 2018 CVDL @ ShanghaiTech - All rights reserved </small>
-        </div>
-    </footer>
-    <!-- End Footer -->
+    <div class="footer"></div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/all.min.js"></script>
 
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/all.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".footer").load("/common/footer.html");
+            $(".navigation").load("/common/navigation.html");
+        });
+    </script>
 </body>
 
 </html>
