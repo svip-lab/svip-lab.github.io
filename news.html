@@ -14,12 +14,47 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="/css/main.css" rel='stylesheet' type='text/css'>
 
+
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic' rel='stylesheet' type='text/css'>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/img/small_logo.png">
+
+    <style type="text/css">
+        .container-fluid .items {
+            border: 1px solid #EEEEEE;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card {
+            height: 150px;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: auto;
+            height: auto;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            position: relative;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .card-content {
+            height: 80px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
@@ -27,47 +62,107 @@
 
     <div class="news top-container" style="font-size: 16px">
         <div class="container-fluid">
-            <div class="post">
-                <header>
-                    <h1>News</h1>
-                    <hr />
-                </header>
-                [2018/11/03] We have 1 paper accepted by
-                <strong>
-                    <font color="red">AAAI 2019</font>
-                </strong>!
-                <br />
+            <header>
+                <h1>News</h1>
+                <hr />
+            </header>
+            <div class="row">
+                <div class="col-lg-3 col-md-4" style="cursor: pointer;" onclick="window.open('/publication.html')">
+                    <div class="items text-center">
+                        <div class="card">
+                            <img src="/img/news/AAAI2019.png" />
+                        </div>
+                        <div class="card-title">1 paper at AAAI 2019</div>
+                        <p>2018/11/03</p>
+                        <div class="card-content">
+                            We have 1 paper accepted by
+                            <strong>
+                                <font color="red">AAAI 2019</font>
+                            </strong>!</p>
+                        </div>
+                    </div>
+                </div>
 
-                [2018/09/27] We have 1 paper accepted as
-                <strong>
-                    <font color="red">ACCV 2018 Oral Presentation (accepted rate: 4.6%)</font>
-                </strong>!
-                <br />
+                <div class="col-lg-3 col-md-4" style="cursor: pointer;" onclick="window.open('/publication.html')">
+                    <div class="items text-center">
+                        <div class="card">
+                            <img src="/img/news/accv2018.png" />
+                        </div>
+                        <div class="card-title">1 paper at ACCV 2018 </div>
+                        <p>2018/09/27</p>
+                        <div class="card-content">
+                            We have 1 paper accepted by
+                            <strong>
+                                <font color="red">ACCV 2018 Oral Presentation (accepted rate: 4.6%)</font>
+                            </strong>!</p>
+                        </div>
+                    </div>
+                </div>
 
-                [2018/07/03] We have 2 papers accepted by
-                <strong>
-                    <font color="red">ECCV 2018</font>
-                </strong>!
-                <br />
+                <div class="col-lg-3 col-md-4" style="cursor: pointer;" onclick="window.open('/publication.html')">
+                    <div class="items text-center">
+                        <div class="card">
+                            <img src="/img/news/ECCV2018.png" />
+                        </div>
+                        <div class="card-title">2 papers at ECCV 2018 </div>
+                        <p>2018/07/03</p>
+                        <div class="card-content">
+                            We have 2 paper accepted by
+                            <strong>
+                                <font color="red">ECCV 2018</font>
+                            </strong>!</p>
+                        </div>
+                    </div>
+                </div>
 
-                [2018/02/12] We have 5 papers accepted by
-                <strong>
-                    <font color="red">CVPR 2018</font>
-                </strong>!
-                <br />
+                <div class="col-lg-3 col-md-4" style="cursor: pointer;" onclick="window.open('/publication.html')">
+                    <div class="items text-center">
+                        <div class="card">
+                            <img src="/img/news/cvpr2018.jpg" />
+                        </div>
+                        <div class="card-title">5 papers at CVPR 2018 </div>
+                        <p>2018/02/12</p>
+                        <div class="card-content">
+                            We have 5 papers accepted by
+                            <strong>
+                                <font color="red">CVPR 2018</font>
+                            </strong>!</p>
+                        </div>
+                    </div>
+                </div>
 
-                [2017/10/10] We have 1 paper accepted by
-                <strong>
-                    <font color="red">ICCV 2017</font>
-                </strong>!
-                <br />
 
-                [2017/08/14] We have 1 paper accepted by
-                <strong>
-                    <font color="red">IJCAI 2017</font>
-                </strong>!
-                <br />
+                <div class="col-lg-3 col-md-4" style="cursor: pointer;" onclick="window.open('/publication.html')">
+                    <div class="items text-center">
+                        <div class="card">
+                            <img src="/img/news/iccv2017.png" />
+                        </div>
+                        <div class="card-title">1 paper at ICCV 2017 </div>
+                        <p>2017/10/10</p>
+                        <div class="card-content">
+                            We have 1 paper accepted by
+                            <strong>
+                                <font color="red">ICCV 2017</font>
+                            </strong>!</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-lg-3 col-md-4" style="cursor: pointer;" onclick="window.open('/publication.html')">
+                    <div class="items text-center">
+                        <div class="card">
+                            <img src="/img/news/ijcai2017.png" />
+                        </div>
+                        <div class="card-title">1 paper at IJCAI 2017 </div>
+                        <p>2017/08/14</p>
+                        <div class="card-content">
+                            We have 1 paper accepted by
+                            <strong>
+                                <font color="red">IJCAI 2017</font>
+                            </strong>!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
