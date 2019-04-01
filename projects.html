@@ -108,16 +108,14 @@
         // DATABASE
         var deadlines = new Array();
         var shouldDisplay = {
-            "A+": true,
             "A": true,
-            "B+": true,
             "B": true,
             "C": true
         }
         // Machine Learning
         deadlines.push({
             venue: "ICCV 2019",
-            area: "A",
+            area: "B",
             deadline: moment("2019-03-22 23:59:59 -0700", "YYYY-MM-DD HH:mm:ss Z"),
             website: "http://iccv2019.thecvf.com/",
             location: "Seoul, South Korea (韩国 首尔)",
@@ -125,7 +123,7 @@
         });
         deadlines.push({
             venue: "IJCAI 2019",
-            area: "A",
+            area: "B",
             deadline: moment("2019-02-25 23:59:59 -1200", "YYYY-MM-DD HH:mm:ss Z"),
             website: "https://www.ijcai19.org/important-dates.html",
             location: "Macao, China (中国 澳门)",
@@ -133,7 +131,7 @@
         });
         deadlines.push({
             venue: "NIPS 2019",
-            area: "A+",
+            area: "A",
             deadline: moment("2019-05-23 17:59:59 -0700", "YYYY-MM-DD HH:mm:ss Z"),
             website: "https://nips.cc/Conferences/2019",
             location: "Vancouver, BC, Canada (加拿大 温哥华)",
@@ -141,7 +139,7 @@
         });
         deadlines.push({
             venue: "MICCAI 2019",
-            area: "A",
+            area: "B",
             deadline: moment("2019-04-02 23:59:59 -0700", "YYYY-MM-DD HH:mm:ss Z"),
             website: "http://www.miccai2019.org/",
             location: "Shenzhen, China (中国 深圳)",
@@ -149,7 +147,7 @@
         });
         deadlines.push({
             venue: "AAAI 2020 (TBD)",
-            area: "A",
+            area: "B",
             deadline: moment("2019-09-05 23:59:00 -1000", "YYYY-MM-DD HH:mm:ss Z"),
             website: "https://aaai.org/Conferences/AAAI-19/",
             location: "TBD",
@@ -157,7 +155,7 @@
         });
         deadlines.push({
             venue: "ACMMM 2019",
-            area: "B+",
+            area: "B",
             deadline: moment("2019-04-08 23:59:59 -1200", "YYYY-MM-DD HH:mm:ss Z"),
             website: "http://www.acmmm.org/2019",
             location: "Nice, France (法国 尼斯)",
@@ -165,7 +163,7 @@
         });
         deadlines.push({
             venue: "BMVC 2019",
-            area: "B+",
+            area: "C",
             deadline: moment("2019-04-29 23:59:59 -1200", "YYYY-MM-DD HH:mm:ss Z"),
             website: "http://bmvc2019.org",
             location: "Cardiff University, United Kingdom (英国 卡迪夫大学)",
@@ -173,7 +171,7 @@
         });
         deadlines.push({
             venue: "CVPR 2020 (TBD)",
-            area: "A",
+            area: "B",
             deadline: moment("2019-11-16 23:59:59 -0800", "YYYY-MM-DD HH:mm:ss Z"),
             website: "http://cvpr2020.thecvf.com/",
             location: "Seattle, United States (美国 西雅图)",
@@ -181,7 +179,7 @@
         });
         deadlines.push({
             venue: "ICLR 2020 (TBD)",
-            area: "A+",
+            area: "A",
             deadline: moment("2019-09-27 23:59:59 -0400", "YYYY-MM-DD HH:mm:ss Z"),
             website: "https://iclr.cc/",
             location: "Addis Ababa, Ethiopia (埃塞俄比亚 亚的斯亚贝巴)",
@@ -189,7 +187,7 @@
         });
         deadlines.push({
             venue: "SIGGRAPH Asia 2019 (TBD)",
-            area: "A+",
+            area: "A",
             deadline: moment("2019-06-05 23:59:59 -0000", "YYYY-MM-DD HH:mm:ss Z"),
             website: "https://sa2019.siggraph.org/",
             location: "Brisbane, Australia (澳大利亚 布里斯班)",
@@ -197,7 +195,7 @@
         });
         deadlines.push({
             venue: "3D Vision 2019",
-            area: "B+",
+            area: "C",
             deadline: moment("2019-06-10 23:59:59 -0400", "YYYY-MM-DD HH:mm:ss Z"),
             website: "http://2019.3DV.org",
             location: "Québec, Canada (加拿大 魁北克)",
@@ -322,11 +320,9 @@
                         <!-- <div id="all_checkbox" style="display: none;"> -->
                         <div id="all_checkbox" style="font-size: 14px;">
                             <center>
-                                A+ (5分)<input type="checkbox" id="A+" onclick="" checked>
-                                A (3分)<input type="checkbox" id="A" onclick="" checked>
-                                B+ (2分)<input type="checkbox" id="B+" onclick="" checked>
-                                B (1分)<input type="checkbox" id="B" onclick="" checked>
-                                C (0分)<input type="checkbox" id="C" onclick="" checked>
+                                A (5分)<input type="checkbox" id="A" onclick="" checked>
+                                B (3分)<input type="checkbox" id="B" onclick="" checked>
+                                C (1分)<input type="checkbox" id="C" onclick="" checked>
                             </center>
                         </div>
                         <br>
