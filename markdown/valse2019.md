@@ -6,7 +6,7 @@
 ## Paper
 
 * [Single-Image Piece-wise Planar 3D Reconstruction via Associative Embedding](https://arxiv.org/pdf/1902.09777.pdf)  
-Zehao Yu*, Jia Zheng*, Dongze Lian, Zihan Zhou, Shenghua Gao
+Zehao Yu\*, Jia Zheng\*, Dongze Lian, Zihan Zhou, Shenghua Gao
 
 ## 酒店
 刚到酒店那晚大家还是很兴奋的
