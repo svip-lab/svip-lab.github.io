@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+
+    <title>Shanghaitech Vision and Intelligent Perception(SVIP) LAB</title>
+    <meta name="description" content="">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/main.css" rel='stylesheet' type='text/css'>
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic' rel='stylesheet'
+        type='text/css'>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/small_logo.png">
+</head>
+
+<body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
+    <div class="navigation"></div>
+
+    <div class="news top-container">
+        <div class="container-fluid">
+            <div id="primarycontent">
+                <center>
+                    <h2>iPER dataset</h2>
+                </center>
+                <center>
+                    <h3>
+                        <a href="http://www.shanghaitech.edu.cn" target="_blank">ShenghaiTech University</a>
+                    </h3>
+                </center>
+                <center>
+                    <h3>
+                        <a href="" target="_blank" style="color: #990000">[Download]</a>
+                    </h3>
+                </center>
+                <center>
+                    <img src="/img/dataset/iPER/dataset_intro_1080p.jpg" width="1000">
+                </center>
+                <p></p>
+
+
+                <p>
+                    <h2>Introduction</h2>
+
+                    <div style="font-size:14px">
+                        <p>To evaluate the performances of our proposed method of motion imitation, appearance transfer
+                            and novel view synthesis, we build a new dataset with diverse styles of clothes, named as
+                            Impersonator (iPER) dataset. There are 30 subjects of different conditions of shape, height
+                            and gender. Each subject wears different clothes and performs an A-pose video and a video
+                            with random actions. Some subjects might wear multiple clothes, and there are 103 clothes in
+                            total. The whole dataset contains 206 video sequences with 241,564 frames. We split it into
+                            training/testing set at the ratio of 8:2 according to the different clothes.
+                        </p>
+                    </div>
+
+
+                    <center>
+                        <img src="/img/dataset/iPER/number.png" width="800">
+                    </center>
+
+                    <p>
+                        Details of Impersonator (iPER) dataset as shown in above. (a) shows the class of actions and
+                        their number of
+                        occurrences. (b) shows the styles of clothes. (c) and (d) are the distributions of weight and
+                        height of all actors. There are 30 actors in total.
+                    </p>
+
+                    <h2>Action Demo (A pose)</h2>
+                    <center>
+                        <video muted controls width="600">
+                            <source src="/img/dataset/iPER/3x4_A_pose.mp4" type="video/mp4">
+                        </video>
+                    </center>
+                    <h2>Action Demo (Random pose)</h2>
+                    <center>
+                        <video muted controls width="600">
+                            <source src="/img/dataset/iPER/3x4_random_pose.mp4" type="video/mp4">
+                        </video>
+                    </center>
+
+                    <h2>Evaluation Metric</h2>
+                    <p>
+                        We propose an evaluation protocol of testing set of iPER dataset and it is able to indicate the
+                        performance of different methods in terms of different aspects. The details are listed in
+                        followings:
+                    </p>
+
+                    <p>(1) In each video, we select three images as source images (frontal, sideway and
+                        occlusive) with different degrees of occlusion. The frontal image contains the most information,
+                        while the sideway will drop out some information, and occlusive image will introduce ambiguity.
+                    </p>
+
+                    <p>
+                        (2) For each source image, we perform self-imitation that actors imitate actions from
+                        themselves.
+                        SSIM and Learned Perceptual Similarity (LPIPS) are the evaluation metrics in
+                        self-imitation setting.
+                    </p>
+
+                    <p>
+                        (3) Besides, we also conduct cross-imitation that actors imitate actions
+                        from others. We use Inception Score (IS) and Fr´echet Distance on a pre-trained person-reid
+                        model, named as FReID, to evaluate the quality of generated images.
+                    </p>
+
+
+
+
+                    <h2>Citation</h2>
+                    If you find this useful, please cite our work as follows:
+
+                    <pre>
+@InProceedings{lwb2019,
+    title={Liquid Warping GAN: A Unified Framework for Human Motion Imitation, Appearance Transfer and Novel View Synthesis},
+    author={Wen Liu and Zhixin Piao, Min Jie, Wenhan Luo, Lin Ma and and Shenghua Gao},
+    booktitle={The IEEE International Conference on Computer Vision (ICCV)},
+    year={2019}
+}</pre>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/all.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".footer").load("/common/footer.html");
+            $(".navigation").load("/common/navigation.html");
+        });
+    </script>
+
+</body>
+
+</html>

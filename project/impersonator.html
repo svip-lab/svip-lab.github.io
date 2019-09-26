@@ -51,14 +51,93 @@
 
                 <p>
                     <a class="btn btn-primary" href="https://github.com/svip-lab/impersonator" target="_blank">Code</a>
-                    <a class="btn btn-primary" href="">Dataset</a>
+                    <a class="btn btn-primary" href="/dataset/iPER_dataset.html" target="_blank">Dataset</a>
                     <a class="btn btn-primary" href="" target="_blank">Paper</a>
                     <a class="btn btn-primary" href="">Supplemental Material</a>
                 </p>
             </div>
 
+            <div class="row clearfix">
+                <div class="col-md-4 column">
+                    <center>
+                        <h4 style="color:#1098da">Motion Imitation</h4>
+                    </center>
+                    <img src="/project_img/impersonator/actor/woman/Sweaters-id_0000088807_4_full.jpg"
+                        width="166" style="float:left">
+                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="166" style="float:left">
+                        <source
+                            src="/project_img/impersonator/intro/motion_transfer/mixamo_0007_Sweaters-id_0000088807_4_full.mp4"
+                            type="video/mp4">
+                    </video>
+                    <img src="/project_img/impersonator/intro/motion_transfer/000.jpg" width="166" style="float:left">
+                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="166" style="float:left">
+                        <source src="/project_img/impersonator/intro/motion_transfer/mixamo_0031_000.mp4"
+                            type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="col-md-4 column">
+                    <center>
+                        <h4 style="color:#eb453e">Appearance Transfer</h4>
+                    </center>
+                    <img src="/project_img/impersonator/intro/appearance_transfer/Sweaters-id_0000337302_4_full.jpg"
+                        width="166" style="float:left">
+                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="166" style="float:left">
+                        <source
+                            src="/project_img/impersonator/intro/appearance_transfer/Sweaters-id_0000337302_4_full.mp4"
+                            type="video/mp4">
+                    </video>
+
+                    <img src="/project_img/impersonator/intro/appearance_transfer/001_19_1_000.jpg" width="166"
+                        style="float:left">
+                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="166" style="float:left">
+                        <source src="/project_img/impersonator/intro/appearance_transfer/001_19_1_000.mp4"
+                            type="video/mp4">
+                    </video>
+
+                </div>
+
+                <div class="col-md-4 column">
+                    <center>
+                        <h4 style="color:#9a59b2">Novel View Synthesis</h4>
+                    </center>
+                    <img src="/project_img/impersonator/intro/novel_view/Jackets_Vests-id_0000071603_4_full.jpg"
+                        width="166" style="float:left">
+                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="166" style="float:left">
+                        <source
+                            src="/project_img/impersonator/intro/novel_view/T_novel_view_Jackets_Vests-id_0000071603_4_full.mp4"
+                            type="video/mp4">
+                    </video>
+
+                    <img src="/project_img/impersonator/intro/novel_view/novel_3.jpg" width="166" style="float:left">
+                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="166" style="float:left">
+                        <source src="/project_img/impersonator/intro/novel_view/novel_3.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
             <div class="section">
-                <h3>Overview</h3>
+                <h3>Abstract</h3>
+                We tackle the human motion imitation, appearance transfer, and novel view synthesis within a uniﬁed
+                framework, which means that the model once being trained can be used to handle all these tasks. The
+                existing taskspeciﬁc methods mainly use 2D keypoints (pose) to estimate the human body structure.
+                However, they only expresses the position information with no abilities to characterize the personalized
+                shape of the individual person and model the limbs rotations. In this paper, we propose to use a 3D body
+                mesh recovery module to disentangle the pose and shape, which can not only model the joint location and
+                rotation but also characterize the personalized body shape. To preserve the source information, such as
+                texture, style, color, and face identity, we propose a Liquid Warping GAN with Liquid Warping Block
+                (LWB) that propagates the source information in both image and feature spaces, and synthesizes an image
+                with respect to the reference. Speciﬁcally, the source features are extracted by a denoising
+                convolutional auto-encoder for characterizing the source identity well. Furthermore, our proposed method
+                is able to support a more ﬂexible warping from multiple sources. In addition, we build a new dataset,
+                namely Impersonator (iPER) dataset, for the evaluation of human motion imitation, appearance transfer,
+                and novel view synthesis. Extensive experiments demonstrate the effectiveness of our method in several
+                aspects, such as robustness in occlusion case and preserving face identity, shape consistency and
+                clothes details.
+            </div>
+
+            <div class="section">
+                <h3>FrameWork Overview</h3>
                 <hr>
                 <center>
                     <img src="/project_img/impersonator/pipeline.png" width="1000">
@@ -66,35 +145,577 @@
             </div>
 
             <div class="section">
-                <h3>Motion Transfer</h3>
+                <h3>Paper Video</h3>
                 <hr>
                 <center>
-                    <img src="/project_img/impersonator/motion_transfer.jpg" width="1000">
+                    <video muted controls width="1000">
+                        <source src="/project_img/impersonator/intro/demo.mp4" type="video/mp4">
+                    </video>
                 </center>
+
             </div>
 
-            <div class="section">
-                <h3>Appearance Transfer</h3>
-                <hr>
-                <center>
-                    <img src="/project_img/impersonator/appearance_transfer.jpg" width="1000">
-                </center>
+            <h3>Application</h3>
+            <hr>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+
+                    <div class="tabbable" id="tabs-338432">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#panel-motion-transfer" data-toggle="tab">Motion Transfer</a>
+                            </li>
+                            <li>
+                                <a href="#panel-appearance-transfer" data-toggle="tab">Appearance Transfer</a>
+                            </li>
+                            <li>
+                                <a href="#panel-novel-view" data-toggle="tab">Novel View Synthesis</a>
+                            </li>
+                            <li>
+                                <a href="#panel-animation" data-toggle="tab">Motion Transfer & Appearance
+                                    Transfer</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+
+
+                            <!--motion transfer panel-->
+                            <div class="tab-pane active" id="panel-motion-transfer">
+                                <div class="section">
+                                    <img src="/project_img/impersonator/actor/woman/Sweaters-id_0000088807_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/actor/woman/fashionWOMENBlouses_Shirtsid0000695303_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/actor/man/Sweatshirts_Hoodies-id_0000680701_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/actor/imper/000.jpg" width="166">
+                                    <img src="/project_img/impersonator/actor/imper/001_19_1_000.jpg" width="166">
+                                    <img src="/project_img/impersonator/actor/imper/026_1_1_0000.jpg" width="166">
+                                    <hr>
+                                    <!-- <h4>0007</h4> -->
+                                    <!-- <video muted autoplay="autoplay" loop="loop" class="aaa" width="166">
+                                        <source
+                                            src="/project_img/impersonator/woman/Sweaters-id_0000088807_4_full/acrobat/mixamo_0007_Sweaters-id_0000088807_4_full.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="166">
+                                        <source
+                                            src="/project_img/impersonator/woman/fashionWOMENBlouses_Shirtsid0000695303_4full/acrobat/mixamo_0007_fashionWOMENBlouses_Shirtsid0000695303_4full.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="166">
+                                        <source
+                                            src="/project_img/impersonator/man/Sweatshirts_Hoodies-id_0000680701_4_full/acrobat/mixamo_0007_Sweatshirts_Hoodies-id_0000680701_4_full.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="166">
+                                        <source src="/project_img/impersonator/motion/000/acrobat/mixamo_0007_000.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="166">
+                                        <source
+                                            src="/project_img/impersonator/motion/001_19_1_000/acrobat/mixamo_0007_001_19_1_000.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="166">
+                                        <source
+                                            src="/project_img/impersonator/motion/026_1_1_0000/acrobat/mixamo_0007_026_1_1_0000.mp4"
+                                            type="video/mp4">
+                                    </video> -->
+
+                                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="1015">
+                                        <source src="/project_img/impersonator/motion/acrobat_0007.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="1015">
+                                        <source src="/project_img/impersonator/motion/dance_0102.mp4" type="video/mp4">
+                                    </video>
+                                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="1015">
+                                        <source src="/project_img/impersonator/motion/acrobat_0031.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="1015">
+                                        <source src="/project_img/impersonator/motion/acrobat_0083.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="1015">
+                                        <source src="/project_img/impersonator/motion/acrobat_0131.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="1015">
+                                        <source src="/project_img/impersonator/motion/acrobat_0145.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="1015">
+                                        <source src="/project_img/impersonator/motion/base_0020.mp4" type="video/mp4">
+                                    </video>
+                                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="1015">
+                                        <source src="/project_img/impersonator/motion/base_0022.mp4" type="video/mp4">
+                                    </video>
+                                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="1015">
+                                        <source src="/project_img/impersonator/motion/base_0032.mp4" type="video/mp4">
+                                    </video>
+                                    <video muted autoplay="autoplay" loop="loop" class="aaa" width="1015">
+                                        <source src="/project_img/impersonator/motion/base_0070.mp4" type="video/mp4">
+                                    </video>
+
+                                </div>
+                            </div>
+
+
+                            <!--appearance transfer panel-->
+                            <div class="tab-pane" id="panel-appearance-transfer">
+                                <div class="section">
+                                    <div style="width:166px;height:166px;float:left">
+                                    </div>
+                                    <img src="/project_img/impersonator/actor/woman/Sweaters-id_0000088807_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/actor/woman/Sweaters-id_0000337302_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/actor/man/Jackets_Vests-id_0000008408_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/actor/imper/024_7_2_0000.jpg" width="166">
+                                    <img src="/project_img/impersonator/actor/imper/023_3_1_000.jpg" width="166">
+                                    <hr>
+
+                                    <!--Sweatshirts_Hoodies-id_0000183103_4_full.jpg-->
+                                    <img src="/project_img/impersonator/actor/man/Sweatshirts_Hoodies-id_0000183103_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000088807_4_full/Sweaters-id_0000088807_4_full.jpg.Sweatshirts_Hoodies-id_0000183103_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000337302_4_full/Sweaters-id_0000337302_4_full.jpg.Sweatshirts_Hoodies-id_0000183103_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000008408_4_full/Jackets_Vests-id_0000008408_4_full.jpg.Sweatshirts_Hoodies-id_0000183103_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/024_7_2_0000/024_7_2_0000.jpg.Sweatshirts_Hoodies-id_0000183103_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/023_3_1_000/023_3_1_000.jpg.Sweatshirts_Hoodies-id_0000183103_4_full.jpg"
+                                        width="166">
+
+                                    <!--Sweatshirts_Hoodies-id_0000097802_4_full.jpg-->
+                                    <img src="/project_img/impersonator/actor/man/Sweatshirts_Hoodies-id_0000097802_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000088807_4_full/Sweaters-id_0000088807_4_full.jpg.Sweatshirts_Hoodies-id_0000097802_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000337302_4_full/Sweaters-id_0000337302_4_full.jpg.Sweatshirts_Hoodies-id_0000097802_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000008408_4_full/Jackets_Vests-id_0000008408_4_full.jpg.Sweatshirts_Hoodies-id_0000097802_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/024_7_2_0000/024_7_2_0000.jpg.Sweatshirts_Hoodies-id_0000097802_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/023_3_1_000/023_3_1_000.jpg.Sweatshirts_Hoodies-id_0000097802_4_full.jpg"
+                                        width="166">
+
+                                    <!--Sweatshirts_Hoodies-id_0000097801_4_full.jpg-->
+                                    <img src="/project_img/impersonator/actor/man/Sweatshirts_Hoodies-id_0000097801_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000088807_4_full/Sweaters-id_0000088807_4_full.jpg.Sweatshirts_Hoodies-id_0000097801_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000337302_4_full/Sweaters-id_0000337302_4_full.jpg.Sweatshirts_Hoodies-id_0000097801_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000008408_4_full/Jackets_Vests-id_0000008408_4_full.jpg.Sweatshirts_Hoodies-id_0000097801_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/024_7_2_0000/024_7_2_0000.jpg.Sweatshirts_Hoodies-id_0000097801_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/023_3_1_000/023_3_1_000.jpg.Sweatshirts_Hoodies-id_0000097801_4_full.jpg"
+                                        width="166">
+
+                                    <!--Sweatshirts_Hoodies-id_0000680701_4_full.jpg-->
+                                    <img src="/project_img/impersonator/actor/man/Sweatshirts_Hoodies-id_0000680701_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000088807_4_full/Sweaters-id_0000088807_4_full.jpg.Sweatshirts_Hoodies-id_0000680701_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000337302_4_full/Sweaters-id_0000337302_4_full.jpg.Sweatshirts_Hoodies-id_0000680701_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000008408_4_full/Jackets_Vests-id_0000008408_4_full.jpg.Sweatshirts_Hoodies-id_0000680701_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/024_7_2_0000/024_7_2_0000.jpg.Sweatshirts_Hoodies-id_0000680701_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/023_3_1_000/023_3_1_000.jpg.Sweatshirts_Hoodies-id_0000680701_4_full.jpg"
+                                        width="166">
+
+                                    <!--Jackets_Vests-id_0000243902_4_full.jpg-->
+                                    <img src="/project_img/impersonator/actor/man/Jackets_Vests-id_0000243902_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000088807_4_full/Sweaters-id_0000088807_4_full.jpg.Jackets_Vests-id_0000243902_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000337302_4_full/Sweaters-id_0000337302_4_full.jpg.Jackets_Vests-id_0000243902_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000008408_4_full/Jackets_Vests-id_0000008408_4_full.jpg.Jackets_Vests-id_0000243902_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/024_7_2_0000/024_7_2_0000.jpg.Jackets_Vests-id_0000243902_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/023_3_1_000/023_3_1_000.jpg.Jackets_Vests-id_0000243902_4_full.jpg"
+                                        width="166">
+
+                                    <!--fashionWOMENBlouses_Shirtsid0000666802_4full.jpg-->
+                                    <img src="/project_img/impersonator/actor/woman/fashionWOMENBlouses_Shirtsid0000666802_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000088807_4_full/Sweaters-id_0000088807_4_full.jpg.fashionWOMENBlouses_Shirtsid0000666802_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000337302_4_full/Sweaters-id_0000337302_4_full.jpg.fashionWOMENBlouses_Shirtsid0000666802_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000008408_4_full/Jackets_Vests-id_0000008408_4_full.jpg.fashionWOMENBlouses_Shirtsid0000666802_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/024_7_2_0000/024_7_2_0000.jpg.fashionWOMENBlouses_Shirtsid0000666802_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/023_3_1_000/023_3_1_000.jpg.fashionWOMENBlouses_Shirtsid0000666802_4full.jpg"
+                                        width="166">
+
+
+
+                                    <!--fashionWOMENBlouses_Shirtsid0000694703_4full.jpg-->
+                                    <img src="/project_img/impersonator/actor/woman/fashionWOMENBlouses_Shirtsid0000694703_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000088807_4_full/Sweaters-id_0000088807_4_full.jpg.fashionWOMENBlouses_Shirtsid0000694703_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000337302_4_full/Sweaters-id_0000337302_4_full.jpg.fashionWOMENBlouses_Shirtsid0000694703_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000008408_4_full/Jackets_Vests-id_0000008408_4_full.jpg.fashionWOMENBlouses_Shirtsid0000694703_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/024_7_2_0000/024_7_2_0000.jpg.fashionWOMENBlouses_Shirtsid0000694703_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/023_3_1_000/023_3_1_000.jpg.fashionWOMENBlouses_Shirtsid0000694703_4full.jpg"
+                                        width="166">
+
+                                    <!--fashionWOMENBlouses_Shirtsid0000695303_4full.jpg-->
+                                    <img src="/project_img/impersonator/actor/woman/fashionWOMENBlouses_Shirtsid0000695303_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000088807_4_full/Sweaters-id_0000088807_4_full.jpg.fashionWOMENBlouses_Shirtsid0000695303_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000337302_4_full/Sweaters-id_0000337302_4_full.jpg.fashionWOMENBlouses_Shirtsid0000695303_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000008408_4_full/Jackets_Vests-id_0000008408_4_full.jpg.fashionWOMENBlouses_Shirtsid0000695303_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/024_7_2_0000/024_7_2_0000.jpg.fashionWOMENBlouses_Shirtsid0000695303_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/023_3_1_000/023_3_1_000.jpg.fashionWOMENBlouses_Shirtsid0000695303_4full.jpg"
+                                        width="166">
+
+
+
+
+                                </div>
+                            </div>
+
+
+                            <!--novel view panel-->
+                            <div class="tab-pane" id="panel-novel-view">
+                                <div class="section">
+                                    <img src="/project_img/impersonator/actor/woman/fashionWOMENDressesid0000271801_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/actor/woman/Sweaters-id_0000363204_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/actor/man/Jackets_Vests-id_0000071603_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/actor/imper_view/009_5_2_0100.jpg" width="166">
+                                    <img src="/project_img/impersonator/actor/imper_view/010_1_1_000.jpg" width="166">
+                                    <img src="/project_img/impersonator/actor/imper_view/novel_3.jpg" width="166">
+                                    <hr>
+                                    <!--30-->
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_fashionWOMENDressesid0000271801_4full/new_out_30.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Sweaters-id_0000363204_4_full/new_out_30.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Jackets_Vests-id_0000071603_4_full/new_out_30.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/009_5_2_0100/imgs/009_5_2_0100.jpg.30.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/010_1_1_000/imgs/010_1_1_000.jpg.30.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/novel_3/imgs/novel_3.jpg.30.jpg"
+                                        width="166">
+
+                                    <!--60-->
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_fashionWOMENDressesid0000271801_4full/new_out_60.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Sweaters-id_0000363204_4_full/new_out_60.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Jackets_Vests-id_0000071603_4_full/new_out_60.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/009_5_2_0100/imgs/009_5_2_0100.jpg.60.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/010_1_1_000/imgs/010_1_1_000.jpg.60.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/novel_3/imgs/novel_3.jpg.60.jpg"
+                                        width="166">
+
+                                    <!--90-->
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_fashionWOMENDressesid0000271801_4full/new_out_90.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Sweaters-id_0000363204_4_full/new_out_90.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Jackets_Vests-id_0000071603_4_full/new_out_90.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/009_5_2_0100/imgs/009_5_2_0100.jpg.90.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/010_1_1_000/imgs/010_1_1_000.jpg.90.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/novel_3/imgs/novel_3.jpg.90.jpg"
+                                        width="166">
+
+                                    <!--120-->
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_fashionWOMENDressesid0000271801_4full/new_out_120.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Sweaters-id_0000363204_4_full/new_out_120.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Jackets_Vests-id_0000071603_4_full/new_out_120.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/009_5_2_0100/imgs/009_5_2_0100.jpg.120.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/010_1_1_000/imgs/010_1_1_000.jpg.120.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/novel_3/imgs/novel_3.jpg.120.jpg"
+                                        width="166">
+
+                                    <!--150-->
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_fashionWOMENDressesid0000271801_4full/new_out_150.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Sweaters-id_0000363204_4_full/new_out_150.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Jackets_Vests-id_0000071603_4_full/new_out_150.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/009_5_2_0100/imgs/009_5_2_0100.jpg.150.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/010_1_1_000/imgs/010_1_1_000.jpg.150.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/novel_3/imgs/novel_3.jpg.150.jpg"
+                                        width="166">
+
+                                    <!--180-->
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_fashionWOMENDressesid0000271801_4full/new_out_180.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Sweaters-id_0000363204_4_full/new_out_180.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Jackets_Vests-id_0000071603_4_full/new_out_180.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/009_5_2_0100/imgs/009_5_2_0100.jpg.180.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/010_1_1_000/imgs/010_1_1_000.jpg.180.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/novel_3/imgs/novel_3.jpg.180.jpg"
+                                        width="166">
+
+                                    <!--210-->
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_fashionWOMENDressesid0000271801_4full/new_out_210.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Sweaters-id_0000363204_4_full/new_out_210.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Jackets_Vests-id_0000071603_4_full/new_out_210.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/009_5_2_0100/imgs/009_5_2_0100.jpg.210.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/010_1_1_000/imgs/010_1_1_000.jpg.210.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/novel_3/imgs/novel_3.jpg.210.jpg"
+                                        width="166">
+
+                                    <!--240-->
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_fashionWOMENDressesid0000271801_4full/new_out_240.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Sweaters-id_0000363204_4_full/new_out_240.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Jackets_Vests-id_0000071603_4_full/new_out_240.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/009_5_2_0100/imgs/009_5_2_0100.jpg.240.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/010_1_1_000/imgs/010_1_1_000.jpg.240.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/novel_3/imgs/novel_3.jpg.240.jpg"
+                                        width="166">
+
+                                    <!--270-->
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_fashionWOMENDressesid0000271801_4full/new_out_270.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Sweaters-id_0000363204_4_full/new_out_270.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Jackets_Vests-id_0000071603_4_full/new_out_270.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/009_5_2_0100/imgs/009_5_2_0100.jpg.270.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/010_1_1_000/imgs/010_1_1_000.jpg.270.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/novel_3/imgs/novel_3.jpg.270.jpg"
+                                        width="166">
+
+                                    <!--300-->
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_fashionWOMENDressesid0000271801_4full/new_out_300.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Sweaters-id_0000363204_4_full/new_out_300.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Jackets_Vests-id_0000071603_4_full/new_out_300.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/009_5_2_0100/imgs/009_5_2_0100.jpg.300.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/010_1_1_000/imgs/010_1_1_000.jpg.300.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/novel_3/imgs/novel_3.jpg.300.jpg"
+                                        width="166">
+
+                                    <!--330-->
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_fashionWOMENDressesid0000271801_4full/new_out_330.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Sweaters-id_0000363204_4_full/new_out_330.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Jackets_Vests-id_0000071603_4_full/new_out_330.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/009_5_2_0100/imgs/009_5_2_0100.jpg.330.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/010_1_1_000/imgs/010_1_1_000.jpg.330.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/novel_3/imgs/novel_3.jpg.330.jpg"
+                                        width="166">
+
+                                    <!--0-->
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_fashionWOMENDressesid0000271801_4full/new_out_0.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Sweaters-id_0000363204_4_full/new_out_0.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/T_novel_view_Jackets_Vests-id_0000071603_4_full/new_out_0.png"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/009_5_2_0100/imgs/009_5_2_0100.jpg.0.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/010_1_1_000/imgs/010_1_1_000.jpg.0.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/novel_view/novel_3/imgs/novel_3.jpg.0.jpg"
+                                        width="166">
+                                </div>
+                            </div>
+
+                            <!--animation panel-->
+                            <div class="tab-pane" id="panel-animation">
+                                <div class="section">
+                                    <div style="width:166px;height:166px;float:left">
+                                    </div>
+                                    <img src="/project_img/impersonator/actor/woman/Sweaters-id_0000088807_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/actor/woman/Sweaters-id_0000337302_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/actor/man/Jackets_Vests-id_0000008408_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/actor/man/Jackets_Vests-id_0000009401_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/actor/man/Jackets_Vests-id_0000071603_4_full.jpg"
+                                        width="166">
+                                    <hr>
+                                    <!--1-->
+                                    <img src="/project_img/impersonator/actor/woman/Sweaters-id_0000088807_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000088807_4_full/Sweaters-id_0000088807_4_full.jpg.Sweaters-id_0000088807_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000337302_4_full/Sweaters-id_0000337302_4_full.jpg.Sweaters-id_0000088807_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000008408_4_full/Jackets_Vests-id_0000008408_4_full.jpg.Sweaters-id_0000088807_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000009401_4_full/Jackets_Vests-id_0000009401_4_full.jpg.Sweaters-id_0000088807_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000071603_4_full/Jackets_Vests-id_0000071603_4_full.jpg.Sweaters-id_0000088807_4_full.jpg"
+                                        width="166">
+
+                                    <!--2-->
+                                    <img src="/project_img/impersonator/actor/woman/fashionWOMENBlouses_Shirtsid0000666802_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000088807_4_full/Sweaters-id_0000088807_4_full.jpg.fashionWOMENBlouses_Shirtsid0000666802_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000337302_4_full/Sweaters-id_0000337302_4_full.jpg.fashionWOMENBlouses_Shirtsid0000666802_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000008408_4_full/Jackets_Vests-id_0000008408_4_full.jpg.fashionWOMENBlouses_Shirtsid0000666802_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000009401_4_full/Jackets_Vests-id_0000009401_4_full.jpg.fashionWOMENBlouses_Shirtsid0000666802_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000071603_4_full/Jackets_Vests-id_0000071603_4_full.jpg.fashionWOMENBlouses_Shirtsid0000666802_4full.jpg"
+                                        width="166">
+
+                                    <!--3-->
+                                    <img src="/project_img/impersonator/actor/woman/fashionWOMENBlouses_Shirtsid0000694703_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000088807_4_full/Sweaters-id_0000088807_4_full.jpg.fashionWOMENBlouses_Shirtsid0000694703_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000337302_4_full/Sweaters-id_0000337302_4_full.jpg.fashionWOMENBlouses_Shirtsid0000694703_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000008408_4_full/Jackets_Vests-id_0000008408_4_full.jpg.fashionWOMENBlouses_Shirtsid0000694703_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000009401_4_full/Jackets_Vests-id_0000009401_4_full.jpg.fashionWOMENBlouses_Shirtsid0000694703_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000071603_4_full/Jackets_Vests-id_0000071603_4_full.jpg.fashionWOMENBlouses_Shirtsid0000694703_4full.jpg"
+                                        width="166">
+
+                                    <!--4-->
+                                    <img src="/project_img/impersonator/actor/woman/fashionWOMENBlouses_Shirtsid0000695303_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000088807_4_full/Sweaters-id_0000088807_4_full.jpg.fashionWOMENBlouses_Shirtsid0000695303_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000337302_4_full/Sweaters-id_0000337302_4_full.jpg.fashionWOMENBlouses_Shirtsid0000695303_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000008408_4_full/Jackets_Vests-id_0000008408_4_full.jpg.fashionWOMENBlouses_Shirtsid0000695303_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000009401_4_full/Jackets_Vests-id_0000009401_4_full.jpg.fashionWOMENBlouses_Shirtsid0000695303_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000071603_4_full/Jackets_Vests-id_0000071603_4_full.jpg.fashionWOMENBlouses_Shirtsid0000695303_4full.jpg"
+                                        width="166">
+
+                                    <!--5-->
+                                    <img src="/project_img/impersonator/actor/woman/fashionWOMENBlouses_Shirtsid0000695304_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000088807_4_full/Sweaters-id_0000088807_4_full.jpg.fashionWOMENBlouses_Shirtsid0000695304_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000337302_4_full/Sweaters-id_0000337302_4_full.jpg.fashionWOMENBlouses_Shirtsid0000695304_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000008408_4_full/Jackets_Vests-id_0000008408_4_full.jpg.fashionWOMENBlouses_Shirtsid0000695304_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000009401_4_full/Jackets_Vests-id_0000009401_4_full.jpg.fashionWOMENBlouses_Shirtsid0000695304_4full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000071603_4_full/Jackets_Vests-id_0000071603_4_full.jpg.fashionWOMENBlouses_Shirtsid0000695304_4full.jpg"
+                                        width="166">
+
+                                    <!--6-->
+                                    <img src="/project_img/impersonator/actor/man/Sweatshirts_Hoodies-id_0000097801_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000088807_4_full/Sweaters-id_0000088807_4_full.jpg.Sweatshirts_Hoodies-id_0000097801_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000337302_4_full/Sweaters-id_0000337302_4_full.jpg.Sweatshirts_Hoodies-id_0000097801_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000008408_4_full/Jackets_Vests-id_0000008408_4_full.jpg.Sweatshirts_Hoodies-id_0000097801_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000009401_4_full/Jackets_Vests-id_0000009401_4_full.jpg.Sweatshirts_Hoodies-id_0000097801_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000071603_4_full/Jackets_Vests-id_0000071603_4_full.jpg.Sweatshirts_Hoodies-id_0000097801_4_full.jpg"
+                                        width="166">
+
+                                    <!--7-->
+                                    <img src="/project_img/impersonator/actor/man/Sweatshirts_Hoodies-id_0000097802_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000088807_4_full/Sweaters-id_0000088807_4_full.jpg.Sweatshirts_Hoodies-id_0000097802_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000337302_4_full/Sweaters-id_0000337302_4_full.jpg.Sweatshirts_Hoodies-id_0000097802_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000008408_4_full/Jackets_Vests-id_0000008408_4_full.jpg.Sweatshirts_Hoodies-id_0000097802_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000009401_4_full/Jackets_Vests-id_0000009401_4_full.jpg.Sweatshirts_Hoodies-id_0000097802_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000071603_4_full/Jackets_Vests-id_0000071603_4_full.jpg.Sweatshirts_Hoodies-id_0000097802_4_full.jpg"
+                                        width="166">
+
+                                    <!--8-->
+                                    <img src="/project_img/impersonator/actor/man/Sweatshirts_Hoodies-id_0000183103_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000088807_4_full/Sweaters-id_0000088807_4_full.jpg.Sweatshirts_Hoodies-id_0000183103_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Sweaters-id_0000337302_4_full/Sweaters-id_0000337302_4_full.jpg.Sweatshirts_Hoodies-id_0000183103_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000008408_4_full/Jackets_Vests-id_0000008408_4_full.jpg.Sweatshirts_Hoodies-id_0000183103_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000009401_4_full/Jackets_Vests-id_0000009401_4_full.jpg.Sweatshirts_Hoodies-id_0000183103_4_full.jpg"
+                                        width="166">
+                                    <img src="/project_img/impersonator/appearance/Jackets_Vests-id_0000071603_4_full/Jackets_Vests-id_0000071603_4_full.jpg.Sweatshirts_Hoodies-id_0000183103_4_full.jpg"
+                                        width="166">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="section">
-                <h3>Novel View Synthesis</h3>
-                <hr>
-                <center>
-                    <img src="/project_img/impersonator/novel_view.jpg" width="1000">
-                </center>
-            </div>
-
-
-            <div class="section">
-                <h3>Novel View Synthesis</h3>
-                <hr>
-            </div>
-            
 
             <div class="section">
 
