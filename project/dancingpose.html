@@ -32,16 +32,13 @@
   <div class="news top-container">
       <div class="container-fluid">
           <div class="jumbotron">
-              <h3>Liquid Warping GAN: A Unified Framework for Human Motion Imitation, Appearance Transfer and Novel
-                  View Synthesis
+              <h3>DancingPose: A Simple Model for Predicting Dancing Pose Sequence from Music
               </h3>
-              <p class="abstract">ICCV 2019</p>
               <p iclass="authors">
-                  <a href="">Wen Liu*</a>,
-                  <a href="">Zhixin Piao*</a>,
-                  <a href="">Min Jie</a>,
-                  <a href="">Wenhan Luo</a>,
-                  <a href="">Lin Ma</a>,
+                  <a href="">Yanyu Xu</a>,
+                  <a href="">Zhixin Piao</a>,
+                  <a href="">Peiyao Wang</a>,
+                  <a href="">Jiashi Feng</a>,
                   <a href="">Shenghua Gao</a>
               </p>
 
@@ -55,22 +52,16 @@
         
           <div class="section">
             <h3>Abstract</h3>
-            We tackle the human motion imitation, appearance transfer, and novel view synthesis within a uniﬁed
-            framework, which means that the model once being trained can be used to handle all these tasks. The
-            existing taskspeciﬁc methods mainly use 2D keypoints (pose) to estimate the human body structure.
-            However, they only expresses the position information with no abilities to characterize the personalized
-            shape of the individual person and model the limbs rotations. In this paper, we propose to use a 3D body
-            mesh recovery module to disentangle the pose and shape, which can not only model the joint location and
-            rotation but also characterize the personalized body shape. To preserve the source information, such as
-            texture, style, color, and face identity, we propose a Liquid Warping GAN with Liquid Warping Block
-            (LWB) that propagates the source information in both image and feature spaces, and synthesizes an image
-            with respect to the reference. Speciﬁcally, the source features are extracted by a denoising
-            convolutional auto-encoder for characterizing the source identity well. Furthermore, our proposed method
-            is able to support a more ﬂexible warping from multiple sources. In addition, we build a new dataset,
-            namely Impersonator (iPER) dataset, for the evaluation of human motion imitation, appearance transfer,
-            and novel view synthesis. Extensive experiments demonstrate the effectiveness of our method in several
-            aspects, such as robustness in occlusion case and preserving face identity, shape consistency and
-            clothes details.
+            In this work, we address an interesting problem of dancing pose sequence prediction from the input music.
+            Compared with the traditional motion sequence prediction, this problem focuses on investigating how to keep
+            the predicted pose sequence harmonic with the music in terms of rhythm consistency. To this end, we develop
+            a simple model, named DancingPose, and a novel audio-guided attention module to assist long-term and harmonic 
+           poses prediction. The module computes acoustic similarity between the current audio segment and historic ones 
+           and guides pose sequence prediction by referring to the previously poses predicted from similar audios. To 
+           evaluate the prediction quality, we develop a new metric to quantitatively measure the rhythm consistency of 
+           the predicted dance sequence, i.e. the matching of generated dancing poses w.r.t. changes of the music rhythm.  
+           We have validated effectiveness of the DancingPose model for predicting harmonic pose sequences with comprehensive 
+           experiments on an existing music & dance dataset and a new dataset we collect from YouTube. 
           </div>
         
           <div class="section">
