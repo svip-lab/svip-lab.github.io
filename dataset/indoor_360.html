@@ -35,13 +35,12 @@
                 <center>
                     <h3>
                         <a href="http://www.shanghaitech.edu.cn" target="_blank">ShanghaiTech University</a>, 
-                        <a href="https://www.kujiale.com/" target="_blank">KooLab</a>
+                        <a href="https://www.kujiale.com/" target="_blank">Kujiale</a>
                     </h3>
                 </center>
                 <center>
                     <h3>
                         <a href="https://www.dropbox.com/s/z66q4o9d11kgu29/indoor_360.zip?dl=0" target="_blank" style="color: #990000">[Download(DropBox)]</a>
-                        <!--<a href="https://pan.baidu.com/" target="_blank" style="color: #990000">[Download(BaiduYun)]</a>-->
                     </h3>
                 </center>
                 <center>
@@ -53,23 +52,17 @@
                 <p>
                     <h2>Introduction</h2>
 
-                    <p>To facilitate a performance evaluation for spherical indoor images, we also build a synthetic dataset. 
-                    Our dataset contains a total of 1775 rooms with 3550 images. Each room corresponds to two images: with furniture or withour furniture. This synthetic dataset contains RGB ominidirectional images, their corresponding depth, corners, plane-plane intersection lines and planes (room layout).
-                    We use a similar rendering technique following <a href="https://github.com/bertjiazheng/Structured3D" target="_blank" style="color: #990000">Structured3D</a> and provides with/without furniture pairs.
-                    Besides depth estimation, our dataset can also be used to empty room synthesis from a furnished room, and layout estimation. 
+                    <p>
+                        To facilitate a performance evaluation for spherical indoor images, we also build a synthetic dataset. Our dataset contains a total of 1775 rooms with 3550 images. Each room corresponds to two images: with furniture or without furniture. This synthetic dataset contains RGB omnidirectional images, their corresponding depth, corners, plane-plane intersection lines and planes (room layout). We use a similar rendering technique following <a href="https://structured3d-dataset.org/" target="_blank">Structured3D</a> and provides with/without furniture pairs. Besides depth estimation, our dataset can also be used to empty room synthesis from a furnished room and layout estimation. 
                     </p>
-
 
                     <center>
                         <img src="/img/dataset/indoor_360/distribution.png" width="800">
                     </center>
 
                     <p>
-                        Details of Shanghaitech-Kujiale Indoor 360° dataset as shown in above. 
-                        (a) and (b) The comparison of the distributions in term of the
-                        depth distances and the difference of depth within the same image between our synthetic dataset and the Stanford 2D-3D-S dataset.
+                        Details of the Shanghaitech-Kujiale Indoor 360° dataset as shown above. (a) and (b) The comparison of the distributions in terms of the depth distances and the difference of depth within the same image between our synthetic dataset and the Stanford 2D-3D-S dataset.
                     </p>
-
 
                     <h2>Dataset Format</h2>
                     Train/test splits are provided in train.txt/test.txt. Each line corresponds to one idx. 
@@ -82,7 +75,7 @@
                     <li>image: idx_empty->room without furniture, idx_full->room with furniture.</li>
                     <li>depth: idx_empty_depth->depth for room without furniture, idx_full->depth for room with furniture.
                         <br>
-                        Depth are stored as uint16 bit single channel images. During training and testing, they are divided by 325 so that they are within a realistic range.
+                        The Depth map is stored as uint16 bit single-channel images. During training and testing, we divide the depth value by 325 so that the depth value is within a realistic range.
                     </li>
 
                    
@@ -108,9 +101,7 @@ year    = {2019}
 }</pre>
                     
                     <h2>Acknowledgements</h2>
-                    We would like to thank <a href="www.kujiale.com/" target="_blank" style="color: #990000">Kujiale.com</a>. for providing the database of house designs and the rendering engine.
-
-                </p>
+                    We would like to thank <a href="www.kujiale.com/" target="_blank" style="color: #990000">Kujiale</a>. for providing the database of house designs and the rendering engine.
             </div>
         </div>
     </div>
