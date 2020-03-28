@@ -53,8 +53,10 @@
                 <p>
                     <h2>Introduction</h2>
 
-                    <p>To facilitate a performance evaluation for spherical indoor images, we also build a synthetic dataset. Our dataset contains a total of 1775 rooms with 3550 images. Each room corresponds to two images: with furniture or withour furniture. This synthetic dataset contains RGB ominidirectional images, their corresponding depth, corners, plane-plane intersection lines and planes (room layout).
-                    Besides depth estimation, our dataset can also be used to empty room synthesis from a furnished room, and layout estimation.
+                    <p>To facilitate a performance evaluation for spherical indoor images, we also build a synthetic dataset. 
+                    Our dataset contains a total of 1775 rooms with 3550 images. Each room corresponds to two images: with furniture or withour furniture. This synthetic dataset contains RGB ominidirectional images, their corresponding depth, corners, plane-plane intersection lines and planes (room layout).
+                    We use a similar rendering technique following Structure3D and provides with/without furniture pairs.
+                    Besides depth estimation, our dataset can also be used to empty room synthesis from a furnished room, and layout estimation. 
                     </p>
 
 
@@ -63,7 +65,7 @@
                     </center>
 
                     <p>
-                        Details of Shanghaitech Kujiale Indoor 360° dataset as shown in above. 
+                        Details of Shanghaitech-Kujiale Indoor 360° dataset as shown in above. 
                         (a) and (b) The comparison of the distributions in term of the
                         depth distances and the difference of depth within the same image between our synthetic dataset and the Stanford 2D-3D-S dataset.
                     </p>
@@ -83,14 +85,7 @@
                         Depth are stored as uint16 bit single channel images. During training and testing, they are divided by 325 so that they are within a realistic range.
                     </li>
 
-
-                    <h2>Structured3D</h2>
-                    Another large-scale photo-realistic dataset containing 3.5K house designs is proposed in
-                    <a href="https://structured3d-dataset.org/" target="_blank" style="color: #990000">Structured3D</a>. 
-                    Please check this dataset as well. We use a similar rendering technique following their work and  
-                    provides with/without furniture pairs.
-
-                    
+                   
 
                     <h2>Citation</h2>
                     If you find this useful, please cite our work as follows:
@@ -102,7 +97,7 @@ author={Lei Jin, Yanyu Xu, Jia Zheng, Junfei Zhang, Rui Tang, Shugong Xu, Jingyi
 booktitle={The IEEE Conference on Computer Vision and Pattern Recognition},
 year={2020}
 }</pre>
-                    Please also cite Structured3D if you use our dataset:
+                    <h2>Reference</h2>
 <pre>
 @article{Structured3D,
 title   = {Structured3D: A Large Photo-realistic Dataset for Structured 3D Modeling},
