@@ -32,7 +32,7 @@
   <div class="news top-container">
       <div class="container-fluid">
           <div class="jumbotron">
-              <h3>DancingPose: A Simple Model for Predicting Dancing Pose Sequence from Music
+              <h3>DancingPose: A Simple Model for Generating Dancing Pose Sequence from Music
               </h3>
               <p iclass="authors">
                   <a href="">Yanyu Xu</a>,
@@ -43,111 +43,49 @@
               </p>
 
               <p>
-                  <a class="btn btn-primary" href="https://github.com/svip-lab/impersonator" target="_blank">Code</a>
-                  <a class="btn btn-primary" href="/dataset/iPER_dataset.html" target="_blank">Dataset</a>
-                  <a class="btn btn-primary" href="https://arxiv.org/pdf/1909.12224.pdf" target="_blank">Paper</a>
-                  <a class="btn btn-primary" href="https://arxiv.org/pdf/1909.12224.pdf" target="_blank">Poster</a>
-                  <a class="btn btn-primary" href="https://arxiv.org/pdf/1909.12224.pdf" target="_blank">AR App</a>
-                  <a class="btn btn-primary" href="/project_img/impersonator/4701-supp.pdf" target="_blank">Supplemental Material</a>
+                  <a class="btn btn-primary" href="" target="_blank">Code</a>
+                  <a class="btn btn-primary" href="" target="_blank">Paper</a>
+                  <a class="btn btn-primary" href="/project_img/dancingpose/DancingPose_supple.pdf" target="_blank">Supplemental Material</a>
               </p>
           </div>
         
           <div class="section">
             <h3>Abstract</h3>
-            In this work, we address an interesting problem of dancing pose sequence prediction from the input music.
-            Compared with the traditional motion sequence prediction, this problem focuses on investigating how to keep
-            the predicted pose sequence harmonic with the music in terms of rhythm consistency. To this end, we develop
-            a simple model, named DancingPose, and a novel audio-guided attention module to assist long-term and harmonic 
-           poses prediction. The module computes acoustic similarity between the current audio segment and historic ones 
-           and guides pose sequence prediction by referring to the previously poses predicted from similar audios. To 
-           evaluate the prediction quality, we develop a new metric to quantitatively measure the rhythm consistency of 
-           the predicted dance sequence, i.e. the matching of generated dancing poses w.r.t. changes of the music rhythm.  
-           We have validated effectiveness of the DancingPose model for predicting harmonic pose sequences with comprehensive 
-           experiments on an existing music & dance dataset and a new dataset we collect from YouTube. 
+            In this work, we address an interesting problem, dancing pose sequence generation according to input music and initial dancing poses.
+            The biggest challenges are how to generate high-quality dancing poses with dance style consistency and beat matching. 
+           To achieve this, we develop a simple model, named DancingPose, to exploit the correlations between the initial dancing 
+           poses and music audio, containing carefully designed Motion Encoder Module, Beat-guided Pacemaker Module and Audio-guided Attention Module.
+            Specially, Motion Encoder Module uses the initial dancing pose sequences as references to keep dance style consistency. 
+           To impose the beat-matching property, Beat-guided Pacemaker Module only exploits the local correlations between foot 
+           speeds of the initial dancing and their corresponding auditory beats, while Audio-guided Attention Module considers 
+           the global correlations between the whole human parts and auditory features. 
+            To evaluate the prediction quality, we develop a new metric to quantitatively measure the beat matching degree of 
+           the predicted dance sequence.  
+            We have validated the effectiveness of our DancingPose model for predicting harmonic pose sequences with comprehensive 
+           experiments on an existing music \& dance. 
           </div>
         
           <div class="section">
             <h3>FrameWork Overview</h3>
             <hr>
             <center>
-                <img src="http://feifantech.top:30009/pipeline.png" width="1000">
+                <img src="/project_img/dancingpose/network.png" width="1000">
             </center>
           </div>
           
-        
+       
           <div class="section">
             <h3>Some predicted dancing pose sequences of the music & dance dataset.</h3>
             <hr>
             <center>
-                <img src="http://feifantech.top:30009/pipeline.png" width="1000">
+                <img src="/project_img/dancingpose/dancing_examples.png" width="1000">
             </center>
           </div>
-        
-          <div class="section">
-            <h3>Some failure cases on the open-set setting on our collected dataset.</h3>
-            <hr>
-            <center>
-                <img src="http://feifantech.top:30009/pipeline.png" width="1000">
-            </center>
-          </div>
-        
-          <div class="section">
-            <h3>Some predicted dancing pose sequences for long term (60s).</h3>
-            <hr>
-            <center>
-                <img src="http://feifantech.top:30009/pipeline.png" width="1000">
-            </center>
-          </div>
-          
-        
-          <div class="section">
-            <h3>Some predicted dancing pose using both the rendered avatar and skeletons</h3>
-            <hr>
-            <center>
-              <iframe width="1000" height="600" src="https://www.youtube.com/embed/nhla-Mfq2Wc" frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-              </iframe>
-            </center>
-          </div>
-        
-          <div class="section">
-            <h3>Some examples using SMPL used for the user study.</h3>
-            <hr>
-            <center>
-              <iframe width="1000" height="600" src="https://www.youtube.com/embed/nhla-Mfq2Wc" frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-              </iframe>
-            </center>
-          </div>
-        
-          <div class="section">
-            <h3>AR demo</h3>
-            <hr>
-            <center>
-              <iframe width="1000" height="600" src="https://www.youtube.com/embed/nhla-Mfq2Wc" frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-              </iframe>
-            </center>
-          </div>
-          
+       
           <div class="section">
             <h3>Citation</h3>
             <hr>
-              If you find this useful, please cite our work as follows:
-            <center>
-              <img src="http://feifantech.top:30009/thumbnail.jpg" width="1000">
-            </center>
-            <pre>
-              @InProceedings{lwb2019,
-                title={Liquid Warping GAN: A Unified Framework for Human Motion Imitation, Appearance Transfer and Novel View Synthesis},
-                author={Wen Liu and Zhixin Piao, Min Jie, Wenhan Luo, Lin Ma and Shenghua Gao},
-                booktitle={The IEEE International Conference on Computer Vision (ICCV)},
-                year={2019}
-            }
-            </pre>
+              If you find this useful, please cite our work. 
           </div>
     </div>
   </div>
