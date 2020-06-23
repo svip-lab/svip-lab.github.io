@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+
+    <title>Shanghaitech Vision and Intelligent Perception(SVIP) LAB</title>
+    <meta name="description" content="">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/main.css" rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="/css/offcanvas.css" rel="stylesheet">
+
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic' rel='stylesheet'
+        type='text/css'>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/small_logo.png">
+</head>
+
+<body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
+  <div class="navigation"></div>
+  <div class="news top-container">
+      <div class="container-fluid">
+          <div class="jumbotron">
+              <h3>DancingPose: A Simple Model for Predicting Dancing Pose Sequence from Music
+              </h3>
+              <p iclass="authors">
+                  <a href="">Yanyu Xu</a>,
+                  <a href="">Zhixin Piao</a>,
+                  <a href="">Peiyao Wang</a>,
+                  <a href="">Jiashi Feng</a>,
+                  <a href="">Shenghua Gao</a>
+              </p>
+
+              <p>
+                  <a class="btn btn-primary" href="https://github.com/svip-lab/impersonator" target="_blank">Code</a>
+                  <a class="btn btn-primary" href="/dataset/iPER_dataset.html" target="_blank">Dataset</a>
+                  <a class="btn btn-primary" href="https://arxiv.org/pdf/1909.12224.pdf" target="_blank">Paper</a>
+                  <a class="btn btn-primary" href="https://arxiv.org/pdf/1909.12224.pdf" target="_blank">Poster</a>
+                  <a class="btn btn-primary" href="https://arxiv.org/pdf/1909.12224.pdf" target="_blank">AR App</a>
+                  <a class="btn btn-primary" href="/project_img/impersonator/4701-supp.pdf" target="_blank">Supplemental Material</a>
+              </p>
+          </div>
+        
+          <div class="section">
+            <h3>Abstract</h3>
+            In this work, we address an interesting problem of dancing pose sequence prediction from the input music.
+            Compared with the traditional motion sequence prediction, this problem focuses on investigating how to keep
+            the predicted pose sequence harmonic with the music in terms of rhythm consistency. To this end, we develop
+            a simple model, named DancingPose, and a novel audio-guided attention module to assist long-term and harmonic 
+           poses prediction. The module computes acoustic similarity between the current audio segment and historic ones 
+           and guides pose sequence prediction by referring to the previously poses predicted from similar audios. To 
+           evaluate the prediction quality, we develop a new metric to quantitatively measure the rhythm consistency of 
+           the predicted dance sequence, i.e. the matching of generated dancing poses w.r.t. changes of the music rhythm.  
+           We have validated effectiveness of the DancingPose model for predicting harmonic pose sequences with comprehensive 
+           experiments on an existing music & dance dataset and a new dataset we collect from YouTube. 
+          </div>
+        
+          <div class="section">
+            <h3>FrameWork Overview</h3>
+            <hr>
+            <center>
+                <img src="http://feifantech.top:30009/pipeline.png" width="1000">
+            </center>
+          </div>
+          
+        
+          <div class="section">
+            <h3>Some predicted dancing pose sequences of the music & dance dataset.</h3>
+            <hr>
+            <center>
+                <img src="http://feifantech.top:30009/pipeline.png" width="1000">
+            </center>
+          </div>
+        
+          <div class="section">
+            <h3>Some failure cases on the open-set setting on our collected dataset.</h3>
+            <hr>
+            <center>
+                <img src="http://feifantech.top:30009/pipeline.png" width="1000">
+            </center>
+          </div>
+        
+          <div class="section">
+            <h3>Some predicted dancing pose sequences for long term (60s).</h3>
+            <hr>
+            <center>
+                <img src="http://feifantech.top:30009/pipeline.png" width="1000">
+            </center>
+          </div>
+          
+        
+          <div class="section">
+            <h3>Some predicted dancing pose using both the rendered avatar and skeletons</h3>
+            <hr>
+            <center>
+              <iframe width="1000" height="600" src="https://www.youtube.com/embed/nhla-Mfq2Wc" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+              </iframe>
+            </center>
+          </div>
+        
+          <div class="section">
+            <h3>Some examples using SMPL used for the user study.</h3>
+            <hr>
+            <center>
+              <iframe width="1000" height="600" src="https://www.youtube.com/embed/nhla-Mfq2Wc" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+              </iframe>
+            </center>
+          </div>
+        
+          <div class="section">
+            <h3>AR demo</h3>
+            <hr>
+            <center>
+              <iframe width="1000" height="600" src="https://www.youtube.com/embed/nhla-Mfq2Wc" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+              </iframe>
+            </center>
+          </div>
+          
+          <div class="section">
+            <h3>Citation</h3>
+            <hr>
+              If you find this useful, please cite our work as follows:
+            <center>
+              <img src="http://feifantech.top:30009/thumbnail.jpg" width="1000">
+            </center>
+            <pre>
+              @InProceedings{lwb2019,
+                title={Liquid Warping GAN: A Unified Framework for Human Motion Imitation, Appearance Transfer and Novel View Synthesis},
+                author={Wen Liu and Zhixin Piao, Min Jie, Wenhan Luo, Lin Ma and Shenghua Gao},
+                booktitle={The IEEE International Conference on Computer Vision (ICCV)},
+                year={2019}
+            }
+            </pre>
+          </div>
+    </div>
+  </div>
+
+  <div class="footer"></div>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/all.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+        $(".footer").load("/common/footer.html");
+        $(".navigation").load("/common/navigation.html");
+    });
+  </script>
+          
+</body>
+
+</html>
